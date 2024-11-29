@@ -459,7 +459,8 @@ class GaussianDiffusion:
             progress=progress,
         ):
             final = sample
-        return final["sample"]
+            yield final["sample"]
+        # return final["sample"]
 
     def p_sample_loop_progressive(
         self,
@@ -781,6 +782,18 @@ class GaussianDiffusion:
                 terms["loss"] = terms["mse"] + terms["vb"]
             else:
                 terms["loss"] = terms["mse"]
+
+            # def process_xstart(x):
+            #     if denoised_fn is not None:
+            #         x = denoised_fn(x)
+            #     if clip_denoised:
+            #         return x.clamp(-1, 1)
+            #     return x
+
+            # 返回模型输出和目标值，方便可视化排查错误
+            terms['model_output']=self._predict_xstart_from_eps(x_t=x_t, t=t, eps=model_output)
+            
+            terms['target']=x_start
         else:
             raise NotImplementedError(self.loss_type)
 

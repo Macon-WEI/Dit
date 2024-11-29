@@ -84,12 +84,24 @@ class LabelEmbedder(nn.Module):
         else:
             drop_ids = force_drop_ids == 1
         labels = torch.where(drop_ids, self.num_classes, labels)
+        # 调试信息：确保 labels 在合法范围内
+        max_index = self.embedding_table.num_embeddings - 1
+        if torch.any(labels > max_index):
+            raise IndexError(f"Index out of range in token_drop labels: {labels} with max_index: {max_index}")
+        
         return labels
 
     def forward(self, labels, train, force_drop_ids=None):
         use_dropout = self.dropout_prob > 0
         if (train and use_dropout) or (force_drop_ids is not None):
             labels = self.token_drop(labels, force_drop_ids)
+            
+        # 调试信息：检查 labels 的值是否在合法范围内
+        max_index = self.embedding_table.num_embeddings - 1
+        if torch.any(labels > max_index):
+            print("max_index",max_index)
+            raise IndexError(f"Index out of range in labels: {labels} with max_index: {max_index}")
+        
         embeddings = self.embedding_table(labels)
         return embeddings
 
