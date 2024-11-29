@@ -1,0 +1,2 @@
+this is device cpu
+torch.Size([1, 4, 32, 32])

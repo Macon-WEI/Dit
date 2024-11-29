@@ -1,0 +1,4 @@
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/test_py/test.py", line 48
+    assert torch.cuda.is_available "torch.cuda.is_available is false"
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax

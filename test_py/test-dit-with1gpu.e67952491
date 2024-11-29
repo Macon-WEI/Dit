@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/test_py/test.py", line 84, in <module>
+    main()
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/test_py/test.py", line 75, in main
+    img_=load_image(img_path)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/test_py/test.py", line 59, in load_image
+    img_trs=transform(img)
+            ^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/miniconda3/envs/DiT/lib/python3.12/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "/public/home/acr0vd9ik6/miniconda3/envs/DiT/lib/python3.12/site-packages/torchvision/transforms/transforms.py", line 479, in __call__
+    return self.lambd(img)
+           ^^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/test_py/test.py", line 52, in <lambda>
+    transforms.Lambda(lambda pil_image: center_crop_arr(pil_image, args.image_size)),
+                                                                   ^^^^
+NameError: name 'args' is not defined
