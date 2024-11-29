@@ -1,0 +1,88 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+[2024-07-14 15:16:08,298] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-14 15:16:08,298] torch.distributed.run: [WARNING] 
+[2024-07-14 15:16:08,298] torch.distributed.run: [WARNING] *****************************************
+[2024-07-14 15:16:08,298] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-14 15:16:08,298] torch.distributed.run: [WARNING] *****************************************
+Counting samples:   0%|          | 0/201 [00:00<?, ?it/s]Counting samples:   0%|          | 0/201 [00:00<?, ?it/s]Counting samples:   0%|          | 0/201 [00:00<?, ?it/s]Counting samples:   0%|          | 0/201 [00:00<?, ?it/s]Counting samples:   3%|▎         | 6/201 [00:00<00:04, 48.48it/s]Counting samples:   3%|▎         | 6/201 [00:00<00:04, 47.55it/s]Counting samples:   3%|▎         | 6/201 [00:00<00:04, 47.43it/s]Counting samples:   3%|▎         | 6/201 [00:00<00:04, 47.48it/s]Counting samples:   6%|▋         | 13/201 [00:00<00:03, 59.56it/s]Counting samples:   6%|▋         | 13/201 [00:00<00:03, 57.12it/s]Counting samples:   6%|▌         | 12/201 [00:00<00:03, 52.89it/s]Counting samples:   6%|▌         | 12/201 [00:00<00:03, 52.87it/s]Counting samples:   9%|▉         | 19/201 [00:00<00:03, 58.07it/s]Counting samples:  10%|▉         | 20/201 [00:00<00:03, 59.33it/s]Counting samples:   9%|▉         | 18/201 [00:00<00:03, 54.18it/s]Counting samples:   9%|▉         | 18/201 [00:00<00:03, 54.18it/s]Counting samples:  13%|█▎        | 26/201 [00:00<00:02, 61.44it/s]Counting samples:  13%|█▎        | 27/201 [00:00<00:02, 60.69it/s]Counting samples:  12%|█▏        | 24/201 [00:00<00:03, 54.36it/s]Counting samples:  12%|█▏        | 24/201 [00:00<00:03, 54.34it/s]Counting samples:  16%|█▋        | 33/201 [00:00<00:02, 61.57it/s]Counting samples:  17%|█▋        | 34/201 [00:00<00:02, 61.24it/s]Counting samples:  15%|█▍        | 30/201 [00:00<00:03, 55.07it/s]Counting samples:  15%|█▍        | 30/201 [00:00<00:03, 55.04it/s]Counting samples:  20%|█▉        | 40/201 [00:00<00:02, 61.98it/s]Counting samples:  18%|█▊        | 36/201 [00:00<00:02, 55.15it/s]Counting samples:  18%|█▊        | 36/201 [00:00<00:02, 55.14it/s]Counting samples:  20%|██        | 41/201 [00:00<00:02, 61.45it/s]Counting samples:  21%|██        | 42/201 [00:00<00:02, 54.66it/s]Counting samples:  21%|██        | 42/201 [00:00<00:02, 54.64it/s]Counting samples:  23%|██▎       | 47/201 [00:00<00:02, 60.12it/s]Counting samples:  24%|██▍       | 48/201 [00:00<00:02, 59.75it/s]Counting samples:  27%|██▋       | 54/201 [00:00<00:02, 59.55it/s]Counting samples:  27%|██▋       | 54/201 [00:00<00:02, 60.10it/s]Counting samples:  24%|██▍       | 48/201 [00:00<00:02, 53.05it/s]Counting samples:  24%|██▍       | 48/201 [00:00<00:02, 53.05it/s]Counting samples:  30%|██▉       | 60/201 [00:01<00:02, 59.32it/s]Counting samples:  27%|██▋       | 54/201 [00:01<00:02, 53.48it/s]Counting samples:  27%|██▋       | 54/201 [00:01<00:02, 53.47it/s]Counting samples:  30%|███       | 61/201 [00:01<00:02, 59.51it/s]Counting samples:  30%|██▉       | 60/201 [00:01<00:02, 54.71it/s]Counting samples:  30%|██▉       | 60/201 [00:01<00:02, 54.71it/s]Counting samples:  33%|███▎      | 67/201 [00:01<00:02, 59.63it/s]Counting samples:  34%|███▍      | 68/201 [00:01<00:02, 60.70it/s]Counting samples:  33%|███▎      | 66/201 [00:01<00:02, 55.93it/s]Counting samples:  33%|███▎      | 66/201 [00:01<00:02, 55.89it/s]Counting samples:  36%|███▋      | 73/201 [00:01<00:02, 59.40it/s]Counting samples:  37%|███▋      | 75/201 [00:01<00:02, 60.43it/s]Counting samples:  40%|███▉      | 80/201 [00:01<00:01, 61.03it/s]Counting samples:  36%|███▋      | 73/201 [00:01<00:02, 57.54it/s]Counting samples:  36%|███▋      | 73/201 [00:01<00:02, 57.52it/s]Counting samples:  41%|████      | 82/201 [00:01<00:01, 60.06it/s]Counting samples:  40%|███▉      | 80/201 [00:01<00:02, 59.70it/s]Counting samples:  40%|███▉      | 80/201 [00:01<00:02, 59.68it/s]Counting samples:  43%|████▎     | 87/201 [00:01<00:01, 59.65it/s]Counting samples:  44%|████▍     | 89/201 [00:01<00:01, 59.36it/s]Counting samples:  43%|████▎     | 86/201 [00:01<00:01, 59.41it/s]Counting samples:  43%|████▎     | 86/201 [00:01<00:01, 59.38it/s]Counting samples:  46%|████▋     | 93/201 [00:01<00:01, 58.44it/s]Counting samples:  47%|████▋     | 95/201 [00:01<00:01, 58.30it/s]Counting samples:  46%|████▌     | 92/201 [00:01<00:01, 58.14it/s]Counting samples:  46%|████▌     | 92/201 [00:01<00:01, 58.13it/s]Counting samples:  50%|████▉     | 100/201 [00:01<00:01, 59.60it/s]Counting samples:  51%|█████     | 102/201 [00:01<00:01, 60.01it/s]Counting samples:  49%|████▉     | 99/201 [00:01<00:01, 58.99it/s]Counting samples:  49%|████▉     | 99/201 [00:01<00:01, 58.96it/s]Counting samples:  53%|█████▎    | 107/201 [00:01<00:01, 59.38it/s]Counting samples:  54%|█████▍    | 109/201 [00:01<00:01, 59.42it/s]Counting samples:  52%|█████▏    | 105/201 [00:01<00:01, 58.15it/s]Counting samples:  52%|█████▏    | 105/201 [00:01<00:01, 58.11it/s]Counting samples:  56%|█████▌    | 113/201 [00:01<00:01, 58.46it/s]Counting samples:  57%|█████▋    | 115/201 [00:01<00:01, 55.59it/s]Counting samples:  55%|█████▌    | 111/201 [00:01<00:01, 57.45it/s]Counting samples:  55%|█████▌    | 111/201 [00:01<00:01, 57.44it/s]Counting samples:  59%|█████▉    | 119/201 [00:02<00:01, 55.28it/s]Counting samples:  60%|██████    | 121/201 [00:02<00:01, 56.23it/s]Counting samples:  58%|█████▊    | 117/201 [00:02<00:01, 57.68it/s]Counting samples:  58%|█████▊    | 117/201 [00:02<00:01, 57.67it/s]Counting samples:  62%|██████▏   | 125/201 [00:02<00:01, 56.02it/s]Counting samples:  63%|██████▎   | 127/201 [00:02<00:01, 56.34it/s]Counting samples:  61%|██████    | 123/201 [00:02<00:01, 57.65it/s]Counting samples:  61%|██████    | 123/201 [00:02<00:01, 57.62it/s]Counting samples:  65%|██████▌   | 131/201 [00:02<00:01, 56.59it/s]Counting samples:  67%|██████▋   | 134/201 [00:02<00:01, 57.48it/s]Counting samples:  64%|██████▍   | 129/201 [00:02<00:01, 57.38it/s]Counting samples:  64%|██████▍   | 129/201 [00:02<00:01, 57.39it/s]Counting samples:  68%|██████▊   | 137/201 [00:02<00:01, 57.54it/s]Counting samples:  70%|██████▉   | 140/201 [00:02<00:01, 55.31it/s]Counting samples:  68%|██████▊   | 136/201 [00:02<00:01, 58.18it/s]Counting samples:  68%|██████▊   | 136/201 [00:02<00:01, 58.18it/s]Counting samples:  71%|███████   | 143/201 [00:02<00:01, 54.11it/s]Counting samples:  73%|███████▎  | 146/201 [00:02<00:00, 55.14it/s]Counting samples:  71%|███████   | 142/201 [00:02<00:01, 57.05it/s]Counting samples:  71%|███████   | 142/201 [00:02<00:01, 57.00it/s]Counting samples:  74%|███████▍  | 149/201 [00:02<00:00, 54.52it/s]Counting samples:  76%|███████▌  | 152/201 [00:02<00:00, 55.29it/s]Counting samples:  74%|███████▎  | 148/201 [00:02<00:00, 57.58it/s]Counting samples:  74%|███████▎  | 148/201 [00:02<00:00, 57.55it/s]Counting samples:  77%|███████▋  | 155/201 [00:02<00:00, 55.19it/s]Counting samples:  77%|███████▋  | 154/201 [00:02<00:00, 58.10it/s]Counting samples:  77%|███████▋  | 154/201 [00:02<00:00, 58.10it/s]Counting samples:  79%|███████▊  | 158/201 [00:02<00:00, 54.53it/s]Counting samples:  80%|████████  | 161/201 [00:02<00:00, 54.87it/s]Counting samples:  80%|███████▉  | 160/201 [00:02<00:00, 57.10it/s]Counting samples:  80%|███████▉  | 160/201 [00:02<00:00, 57.06it/s]Counting samples:  82%|████████▏ | 164/201 [00:02<00:00, 51.29it/s]Counting samples:  83%|████████▎ | 167/201 [00:02<00:00, 50.25it/s]Counting samples:  83%|████████▎ | 166/201 [00:02<00:00, 52.57it/s]Counting samples:  83%|████████▎ | 166/201 [00:02<00:00, 52.54it/s]Counting samples:  85%|████████▍ | 170/201 [00:02<00:00, 49.23it/s]Counting samples:  86%|████████▌ | 173/201 [00:03<00:00, 50.14it/s]Counting samples:  86%|████████▌ | 173/201 [00:03<00:00, 54.98it/s]Counting samples:  86%|████████▌ | 173/201 [00:03<00:00, 54.99it/s]Counting samples:  88%|████████▊ | 176/201 [00:03<00:00, 51.72it/s]Counting samples:  89%|████████▉ | 179/201 [00:03<00:00, 52.12it/s]Counting samples:  89%|████████▉ | 179/201 [00:03<00:00, 56.10it/s]Counting samples:  89%|████████▉ | 179/201 [00:03<00:00, 56.09it/s]Counting samples:  91%|█████████ | 183/201 [00:03<00:00, 54.27it/s]Counting samples:  92%|█████████▏| 185/201 [00:03<00:00, 53.67it/s]Counting samples:  92%|█████████▏| 185/201 [00:03<00:00, 56.43it/s]Counting samples:  92%|█████████▏| 185/201 [00:03<00:00, 56.41it/s]Counting samples:  94%|█████████▍| 189/201 [00:03<00:00, 54.59it/s]Counting samples:  95%|█████████▌| 191/201 [00:03<00:00, 54.46it/s]Counting samples:  95%|█████████▌| 191/201 [00:03<00:00, 56.34it/s]Counting samples:  95%|█████████▌| 191/201 [00:03<00:00, 56.32it/s]Counting samples:  97%|█████████▋| 195/201 [00:03<00:00, 55.58it/s]Counting samples:  98%|█████████▊| 197/201 [00:03<00:00, 55.24it/s]Counting samples:  98%|█████████▊| 197/201 [00:03<00:00, 56.34it/s]Counting samples:  98%|█████████▊| 197/201 [00:03<00:00, 56.34it/s]Counting samples: 100%|██████████| 201/201 [00:03<00:00, 55.53it/s]Counting samples: 100%|██████████| 201/201 [00:03<00:00, 56.84it/s]
+Counting samples: 100%|██████████| 201/201 [00:03<00:00, 56.79it/s]
+Counting samples: 100%|██████████| 201/201 [00:03<00:00, 56.34it/s]
+Counting samples: 100%|██████████| 201/201 [00:03<00:00, 56.34it/s]
+Writing samples to .npz:   0%|          | 0/201 [00:00<?, ?it/s]Writing samples to .npz:   0%|          | 0/201 [00:00<?, ?it/s]Writing samples to .npz:   0%|          | 0/201 [00:00<?, ?it/s]Writing samples to .npz:   0%|          | 0/201 [00:00<?, ?it/s]Writing samples to .npz:   0%|          | 1/201 [00:00<00:09, 21.53it/s]
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/save_train_set_2_npz.py", line 103, in <module>
+    npz_file = create_npz_from_train_folder_2('/public/home/acr0vd9ik6/project/DiT/train')
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/save_train_set_2_npz.py", line 89, in create_npz_from_train_folder_2
+    samples[sample_index] = sample_np
+ValueError: could not broadcast input array from shape (319,500,3) into shape (375,500,3)
+Writing samples to .npz:   0%|          | 1/201 [00:00<00:10, 18.92it/s]
+Writing samples to .npz:   0%|          | 1/201 [00:00<00:10, 18.85it/s]Traceback (most recent call last):
+
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/save_train_set_2_npz.py", line 103, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/save_train_set_2_npz.py", line 103, in <module>
+    npz_file = create_npz_from_train_folder_2('/public/home/acr0vd9ik6/project/DiT/train')
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/save_train_set_2_npz.py", line 89, in create_npz_from_train_folder_2
+    npz_file = create_npz_from_train_folder_2('/public/home/acr0vd9ik6/project/DiT/train')
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/save_train_set_2_npz.py", line 89, in create_npz_from_train_folder_2
+    samples[sample_index] = sample_np
+ValueError    : samples[sample_index] = sample_npcould not broadcast input array from shape (319,500,3) into shape (375,500,3)
+
+ValueError: could not broadcast input array from shape (319,500,3) into shape (375,500,3)
+Writing samples to .npz:   0%|          | 1/201 [00:00<00:11, 17.58it/s]
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/save_train_set_2_npz.py", line 103, in <module>
+    npz_file = create_npz_from_train_folder_2('/public/home/acr0vd9ik6/project/DiT/train')
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/save_train_set_2_npz.py", line 89, in create_npz_from_train_folder_2
+    samples[sample_index] = sample_np
+ValueError: could not broadcast input array from shape (319,500,3) into shape (375,500,3)
+[2024-07-14 15:16:13,605] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 7737) of binary: /public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/python
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+save_train_set_2_npz.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-07-14_15:16:13
+  host      : e10r3n13
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 7738)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-07-14_15:16:13
+  host      : e10r3n13
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 7739)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-07-14_15:16:13
+  host      : e10r3n13
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 7740)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-14_15:16:13
+  host      : e10r3n13
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 7737)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

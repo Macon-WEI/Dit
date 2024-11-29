@@ -1,0 +1,166 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+srun: ROUTE: split_hostlist: hl=b01r3n05 tree_width 0
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,683] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,684] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,684] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,684] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,684] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,685] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,686] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,686] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,686] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,686] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,686] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,686] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,686] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,686] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,686] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,686] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,686] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 22:25:53,689] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.763492  2536 socket.cpp:436] [c10d] The server socket has failed to listen on [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.763581  2549 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.763571  2550 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.764314  2529 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.764539  2543 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.764889  2539 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.765158  2546 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.765413  2534 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.765499  2558 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766039  2555 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766073  2537 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766110  2552 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766093  2556 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766144  2551 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766168  2554 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766222  2538 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766271  2541 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766304  2559 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766335  2530 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766525  2540 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766569  2532 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766541  2533 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766811  2553 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.766881  2548 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.767061  2544 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.767210  2557 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.767410  2547 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.767627  2528 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.767608  2535 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+W0708 22:25:53.767568  2531 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+W0708 22:25:53.771481  2550 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.771497  2550 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.771521  2536 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.771534  2536 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.771612  2549 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.771628  2549 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.772109  2543 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.772125  2543 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.772205  2529 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.772221  2529 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.772679  2534 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.772696  2534 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.772807  2558 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.772823  2558 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.772917  2539 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.772933  2539 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.772919  2546 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.772933  2546 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.773519  2556 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.773535  2556 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.773593  2530 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.773609  2530 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.773941  2538 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.773970  2538 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.773943  2555 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.773970  2555 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774061  2551 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774076  2551 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774178  2541 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774192  2541 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774273  2554 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774288  2554 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774325  2559 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774338  2559 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774333  2537 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774348  2537 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774466  2548 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774483  2548 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774497  2533 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774510  2533 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774487  2540 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774502  2540 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774523  2544 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774536  2544 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774621  2532 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774637  2532 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774631  2557 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774647  2557 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.774874  2552 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.774889  2552 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.775075  2535 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.775091  2535 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.775142  2547 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.775157  2547 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.775316  2531 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.775332  2531 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.775512  2528 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.775528  2528 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 22:25:53.775791  2553 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.775810  2553 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 22:25:53.776656  2542 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+W0708 22:25:53.784575  2542 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 22:25:53.784591  2542 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 66825531.0 ON b01r3n05 CANCELLED AT 2024-07-08T22:26:39 ***
+[2024-07-08 22:26:39,582] torch.distributed.elastic.agent.server.api: [WARNING] Received Signals.SIGTERM death signal, shutting down workers
+[2024-07-08 22:26:39,582] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 2889 closing signal SIGTERM
+[2024-07-08 22:26:39,582] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 2890 closing signal SIGTERM
+[2024-07-08 22:26:39,583] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 2891 closing signal SIGTERM
+[2024-07-08 22:26:39,583] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 2892 closing signal SIGTERM
+slurmstepd: error: *** JOB 66825531 ON b01r3n05 CANCELLED AT 2024-07-08T22:26:39 ***

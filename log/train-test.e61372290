@@ -1,0 +1,177 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+srun: ROUTE: split_hostlist: hl=b01r3n16 tree_width 0
+[2024-05-10 00:11:46,477] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0510 00:12:36.389235 24930 ProcessGroupNCCL.cpp:686] [Rank 1] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=204081040
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0510 00:12:36.396188 24932 ProcessGroupNCCL.cpp:686] [Rank 3] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=199757984
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0510 00:12:36.396406 24931 ProcessGroupNCCL.cpp:686] [Rank 2] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=196770336
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0510 00:12:36.399256 24929 ProcessGroupNCCL.cpp:686] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=210908576
+[[34m2024-05-10 00:12:36[0m] Experiment directory created at train-test1_4dcu/010-DiT-B-4
+I0510 00:12:40.430853 24929 ProcessGroupNCCL.cpp:1340] NCCL_DEBUG: info
+[[34m2024-05-10 00:12:42[0m] DiT Parameters: 130,475,648
+[[34m2024-05-10 00:12:44[0m] Dataset contains 254,136 images (/public/home/acr0vd9ik6/project/DiT/train)
+[[34m2024-05-10 00:12:44[0m] Training for 1400 epochs...
+[[34m2024-05-10 00:12:44[0m] Beginning epoch 0...
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 272, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 206, in main
+    x = vae.encode(x).latent_dist.sample().mul_(0.18215)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+    return method(self, *args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 260, in encode
+    h = self.encoder(x)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/vae.py", line 172, in forward
+    sample = down_block(sample)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 1465, in forward
+    hidden_states = resnet(hidden_states, temb=None)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/resnet.py", line 376, in forward
+    output_tensor = (input_tensor + hidden_states) / self.output_scale_factor
+torch.cuda.OutOfMemoryError: HIP out of memory. Tried to allocate 2.00 GiB. GPU 3 has a total capacty of 15.98 GiB of which 420.95 MiB is free. Of the allocated memory 11.31 GiB is allocated by PyTorch, and 3.07 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 272, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 206, in main
+    x = vae.encode(x).latent_dist.sample().mul_(0.18215)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+    return method(self, *args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 260, in encode
+    h = self.encoder(x)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/vae.py", line 172, in forward
+    sample = down_block(sample)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 1465, in forward
+    hidden_states = resnet(hidden_states, temb=None)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/resnet.py", line 376, in forward
+    output_tensor = (input_tensor + hidden_states) / self.output_scale_factor
+torch.cuda.OutOfMemoryError: HIP out of memory. Tried to allocate 2.00 GiB. GPU 1 has a total capacty of 15.98 GiB of which 408.95 MiB is free. Of the allocated memory 11.31 GiB is allocated by PyTorch, and 3.07 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 272, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 206, in main
+    x = vae.encode(x).latent_dist.sample().mul_(0.18215)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+    return method(self, *args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 260, in encode
+    h = self.encoder(x)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/vae.py", line 172, in forward
+    sample = down_block(sample)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 1465, in forward
+    hidden_states = resnet(hidden_states, temb=None)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/resnet.py", line 376, in forward
+    output_tensor = (input_tensor + hidden_states) / self.output_scale_factor
+torch.cuda.OutOfMemoryError: HIP out of memory. Tried to allocate 2.00 GiB. GPU 0 has a total capacty of 15.98 GiB of which 412.93 MiB is free. Of the allocated memory 11.31 GiB is allocated by PyTorch, and 3.07 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 272, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 206, in main
+    x = vae.encode(x).latent_dist.sample().mul_(0.18215)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+    return method(self, *args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 260, in encode
+    h = self.encoder(x)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/vae.py", line 172, in forward
+    sample = down_block(sample)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 1465, in forward
+    hidden_states = resnet(hidden_states, temb=None)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/resnet.py", line 376, in forward
+    output_tensor = (input_tensor + hidden_states) / self.output_scale_factor
+torch.cuda.OutOfMemoryError: HIP out of memory. Tried to allocate 2.00 GiB. GPU 2 has a total capacty of 15.98 GiB of which 408.95 MiB is free. Of the allocated memory 11.31 GiB is allocated by PyTorch, and 3.07 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF
+[2024-05-10 00:13:32,430] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 24929 closing signal SIGTERM
+[2024-05-10 00:13:32,695] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 1 (pid: 24930) of binary: /public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/python
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+./train_options/train_original.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-05-10_00:13:32
+  host      : b01r3n16
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 24931)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-05-10_00:13:32
+  host      : b01r3n16
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 24932)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-05-10_00:13:32
+  host      : b01r3n16
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 24930)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: b01r3n16: task 0: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=61372290.0
+/opt/gridview/slurm/spool_slurmd/job61372290/slurm_script: line 37: --num-classes: command not found
+/opt/gridview/slurm/spool_slurmd/job61372290/slurm_script: line 38: --epochs: command not found

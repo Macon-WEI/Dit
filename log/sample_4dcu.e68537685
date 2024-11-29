@@ -1,0 +1,125 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+[2024-08-04 13:54:04,994] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0804 13:54:37.651492 11778 ProcessGroupNCCL.cpp:686] [Rank 1] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=198464016
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0804 13:54:37.651541 11779 ProcessGroupNCCL.cpp:686] [Rank 2] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=196254576
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0804 13:54:37.651624 11777 ProcessGroupNCCL.cpp:686] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=209879504
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0804 13:54:37.651746 11780 ProcessGroupNCCL.cpp:686] [Rank 3] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=216009120
+[[34m2024-08-04 13:54:37[0m] Experiment directory created at train-test1_4dcu/026-DiT-L-4
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 356, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 208, in main
+    state_dict=torch.load(args.resume_from_checkpoint,map_location=device)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1014, in load
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 356, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 208, in main
+    state_dict=torch.load(args.resume_from_checkpoint,map_location=device)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1014, in load
+    return _load(opened_zipfile,
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1422, in _load
+    return _load(opened_zipfile,
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1422, in _load
+    result = unpickler.load()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1392, in persistent_load
+    result = unpickler.load()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1392, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1366, in load_tensor
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1366, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1302, in restore_location
+    wrap_storage=restore_location(storage, location),
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1302, in restore_location
+    result = map_location(storage, location)
+TypeError: 'int' object is not callable
+    result = map_location(storage, location)
+TypeError: 'int' object is not callable
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 356, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 208, in main
+    state_dict=torch.load(args.resume_from_checkpoint,map_location=device)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1014, in load
+    return _load(opened_zipfile,
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1422, in _load
+    result = unpickler.load()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1392, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1366, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1302, in restore_location
+    result = map_location(storage, location)
+TypeError: 'int' object is not callable
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 356, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 208, in main
+    state_dict=torch.load(args.resume_from_checkpoint,map_location=device)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1014, in load
+    return _load(opened_zipfile,
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1422, in _load
+    result = unpickler.load()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1392, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1366, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1302, in restore_location
+    result = map_location(storage, location)
+TypeError: 'int' object is not callable
+[2024-08-04 13:54:55,567] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 11777) of binary: /public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/python
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+./train_options/train_visualize.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-08-04_13:54:55
+  host      : b01r3n08
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 11778)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-08-04_13:54:55
+  host      : b01r3n08
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 11779)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-08-04_13:54:55
+  host      : b01r3n08
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 11780)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-08-04_13:54:55
+  host      : b01r3n08
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 11777)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

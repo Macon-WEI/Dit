@@ -1,0 +1,39 @@
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 0/250 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample.py", line 92, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample.py", line 68, in main
+    samples = diffusion.p_sample_loop(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/gaussian_diffusion.py", line 450, in p_sample_loop
+    for sample in self.p_sample_loop_progressive(
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/gaussian_diffusion.py", line 501, in p_sample_loop_progressive
+    out = self.p_sample(
+          ^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/gaussian_diffusion.py", line 402, in p_sample
+    out = self.p_mean_variance(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/respace.py", line 92, in p_mean_variance
+    return super().p_mean_variance(self._wrap_model(model), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/gaussian_diffusion.py", line 279, in p_mean_variance
+    model_output = model(x, t, **model_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/respace.py", line 129, in __call__
+    return self.model(x, new_ts, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/models.py", line 275, in forward_with_cfg
+    model_out = self.forward(combined, t, y)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/models.py", line 260, in forward
+    y = self.y_embedder(y, self.training)    # (N, D)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/miniconda3/envs/DiT/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/miniconda3/envs/DiT/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/models.py", line 103, in forward
+    raise IndexError(f"Index out of range in labels: {labels} with max_index: {max_index}")
+IndexError: Index out of range in labels: tensor([1, 2, 1, 1]) with max_index: 1

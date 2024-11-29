@@ -1,0 +1,6 @@
+Starting rank=0, seed=0, world_size=4.
+Starting rank=1, seed=1, world_size=4.
+Starting rank=2, seed=2, world_size=4.
+Starting rank=3, seed=3, world_size=4.
+Saving .png samples at samples/DiT-B-4-0450000-size-256-vae-ema-cfg-1.5-seed-0
+Total number of images that will be sampled: 10112

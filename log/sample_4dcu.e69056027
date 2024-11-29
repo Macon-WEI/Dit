@@ -1,0 +1,12 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+  0%|          | 0/250 [00:00<?, ?it/s]/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+  0%|          | 0/250 [00:24<?, ?it/s]
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample_visualize.py", line 159, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample_visualize.py", line 132, in main
+    canvas_path=os.path.join("/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample_result/sample-visualize","canvas-"+f"{cnt:04d}.png")
+NameError: name 'os' is not defined

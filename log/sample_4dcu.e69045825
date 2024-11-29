@@ -1,0 +1,2 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+python: can't open file '/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/sample_visualize.py': [Errno 2] No such file or directory

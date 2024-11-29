@@ -1,0 +1,131 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+[2024-08-04 14:57:22,381] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0804 14:57:57.547191 25181 ProcessGroupNCCL.cpp:686] [Rank 3] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=204099760
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0804 14:57:57.547205 25179 ProcessGroupNCCL.cpp:686] [Rank 1] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=192416304
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0804 14:57:57.547220 25180 ProcessGroupNCCL.cpp:686] [Rank 2] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=196537264
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0804 14:57:57.547236 25178 ProcessGroupNCCL.cpp:686] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=211082624
+[[34m2024-08-04 14:57:58[0m] Experiment directory created at train-test1_4dcu/032-DiT-L-4
+[[34m2024-08-04 14:58:25[0m] Resumed training from checkpoint /public/home/acr0vd9ik6/project/DiT/fast-DiT/train-test1_4dcu/021-DiT-L-4/checkpoints/0050000.pt !
+I0804 14:58:28.959259 25178 ProcessGroupNCCL.cpp:1340] NCCL_DEBUG: info
+[[34m2024-08-04 14:58:31[0m] DiT Parameters: 457,030,784
+[[34m2024-08-04 14:58:31[0m] Dataset contains 14,241 images (/public/home/acr0vd9ik6/project/DiT/fast-DiT/data1/final)
+[[34m2024-08-04 14:58:31[0m] Training for 1 epochs...
+[[34m2024-08-04 14:58:31[0m] Beginning epoch 0...
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 364, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 364, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 289, in main
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 289, in main
+    opt.step()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/optimizer.py", line 373, in wrapper
+    opt.step()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/optimizer.py", line 373, in wrapper
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 364, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 289, in main
+    opt.step()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/optimizer.py", line 373, in wrapper
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 364, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 289, in main
+    opt.step()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/optimizer.py", line 373, in wrapper
+            out = func(*args, **kwargs)out = func(*args, **kwargs)    out = func(*args, **kwargs)
+
+out = func(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/optimizer.py", line 76, in _use_grad
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/optimizer.py", line 76, in _use_grad
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/optimizer.py", line 76, in _use_grad
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/optimizer.py", line 76, in _use_grad
+        ret = func(self, *args, **kwargs)    ret = func(self, *args, **kwargs)
+    ret = func(self, *args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 184, in step
+ret = func(self, *args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 184, in step
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 184, in step
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 184, in step
+    adamw(        
+    adamw(adamw(  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 335, in adamw
+adamw(
+
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 335, in adamw
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 335, in adamw
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 335, in adamw
+    func(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 540, in _multi_tensor_adamw
+        func(    func(
+func(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 540, in _multi_tensor_adamw
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 540, in _multi_tensor_adamw
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/optim/adamw.py", line 540, in _multi_tensor_adamw
+    torch._foreach_lerp_(device_exp_avgs, device_grads, 1 - beta1)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!
+    torch._foreach_lerp_(device_exp_avgs, device_grads, 1 - beta1)    
+torch._foreach_lerp_(device_exp_avgs, device_grads, 1 - beta1)    RuntimeError
+torch._foreach_lerp_(device_exp_avgs, device_grads, 1 - beta1): RuntimeError
+Expected all tensors to be on the same device, but found at least two devices, cuda:2 and cpu!: RuntimeError
+Expected all tensors to be on the same device, but found at least two devices, cuda:3 and cpu!: 
+Expected all tensors to be on the same device, but found at least two devices, cuda:1 and cpu!
+[2024-08-04 14:59:08,285] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 25178) of binary: /public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/python
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+./train_options/train_visualize.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-08-04_14:59:08
+  host      : e10r3n04
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 25179)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-08-04_14:59:08
+  host      : e10r3n04
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 25180)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-08-04_14:59:08
+  host      : e10r3n04
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 25181)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-08-04_14:59:08
+  host      : e10r3n04
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 25178)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

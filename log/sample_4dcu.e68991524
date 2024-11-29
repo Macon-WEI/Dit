@@ -1,0 +1,2 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+slurmstepd: error: *** JOB 68991524 ON i01r1n09 CANCELLED AT 2024-08-11T20:15:33 ***

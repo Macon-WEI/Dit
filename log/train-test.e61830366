@@ -1,0 +1,242 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+[2024-05-15 00:55:34,424] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0515 00:56:14.003747 11838 ProcessGroupNCCL.cpp:686] [Rank 2] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=186913344
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0515 00:56:14.003777 11829 ProcessGroupNCCL.cpp:686] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=205553792
+I0515 00:56:14.003814 11839 ProcessGroupNCCL.cpp:686] [Rank 3] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=199023648
+I0515 00:56:14.003829 11830 ProcessGroupNCCL.cpp:686] [Rank 1] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=213644576
+[[34m2024-05-15 00:56:14[0m] Experiment directory created at train-test1_4dcu/020-DiT-L-2
+I0515 00:56:23.651867 11829 ProcessGroupNCCL.cpp:1340] NCCL_DEBUG: info
+[[34m2024-05-15 00:56:26[0m] DiT Parameters: 457,079,840
+[[34m2024-05-15 00:56:26[0m] Dataset contains 14,241 images (/public/home/acr0vd9ik6/project/DiT/fast-DiT/data1/final)
+[[34m2024-05-15 00:56:26[0m] Training for 1400 epochs...
+[[34m2024-05-15 00:56:26[0m] Beginning epoch 0...
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 272, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 209, in main
+    loss_dict = diffusion.training_losses(model, x, t, model_kwargs)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/respace.py", line 97, in training_losses
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 272, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 209, in main
+    loss_dict = diffusion.training_losses(model, x, t, model_kwargs)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/respace.py", line 97, in training_losses
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 272, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 272, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 209, in main
+        loss_dict = diffusion.training_losses(model, x, t, model_kwargs)main(args)
+
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/respace.py", line 97, in training_losses
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 209, in main
+    loss_dict = diffusion.training_losses(model, x, t, model_kwargs)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/respace.py", line 97, in training_losses
+        return super().training_losses(self._wrap_model(model), *args, **kwargs)    return super().training_losses(self._wrap_model(model), *args, **kwargs)    
+return super().training_losses(self._wrap_model(model), *args, **kwargs)
+return super().training_losses(self._wrap_model(model), *args, **kwargs)  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/gaussian_diffusion.py", line 747, in training_losses
+
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/gaussian_diffusion.py", line 747, in training_losses
+
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/gaussian_diffusion.py", line 747, in training_losses
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/gaussian_diffusion.py", line 747, in training_losses
+        model_output = model(x_t, t, **model_kwargs)    model_output = model(x_t, t, **model_kwargs)    
+model_output = model(x_t, t, **model_kwargs)
+model_output = model(x_t, t, **model_kwargs)  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/respace.py", line 129, in __call__
+
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/respace.py", line 129, in __call__
+
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/respace.py", line 129, in __call__
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/diffusion/respace.py", line 129, in __call__
+    return self.model(x, new_ts, **kwargs)
+      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+return self.model(x, new_ts, **kwargs)        
+return self.model(x, new_ts, **kwargs)return self.model(x, new_ts, **kwargs)  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+        return self._call_impl(*args, **kwargs)    return self._call_impl(*args, **kwargs)    
+return self._call_impl(*args, **kwargs)
+return self._call_impl(*args, **kwargs)  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1519, in forward
+return forward_call(*args, **kwargs)        
+return forward_call(*args, **kwargs)return forward_call(*args, **kwargs)  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1519, in forward
+
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1519, in forward
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1519, in forward
+        else self._run_ddp_forward(*inputs, **kwargs)    else self._run_ddp_forward(*inputs, **kwargs)    
+else self._run_ddp_forward(*inputs, **kwargs)
+else self._run_ddp_forward(*inputs, **kwargs)  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1355, in _run_ddp_forward
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1355, in _run_ddp_forward
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1355, in _run_ddp_forward
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1355, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/train_options/models_original.py", line 245, in forward
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/train_options/models_original.py", line 245, in forward
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/train_options/models_original.py", line 245, in forward
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/train_options/models_original.py", line 245, in forward
+        x = block(x, c)                      # (N, T, D)    x = block(x, c)                      # (N, T, D)    
+x = block(x, c)                      # (N, T, D)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+
+x = block(x, c)                      # (N, T, D)  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)    
+return self._call_impl(*args, **kwargs)      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+
+return self._call_impl(*args, **kwargs)      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+
+return self._call_impl(*args, **kwargs)  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/train_options/models_original.py", line 120, in forward
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/train_options/models_original.py", line 120, in forward
+    return forward_call(*args, **kwargs)
+      File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/train_options/models_original.py", line 120, in forward
+return forward_call(*args, **kwargs)    
+x = x + gate_msa.unsqueeze(1) * self.attn(modulate(self.norm1(x), shift_msa, scale_msa))  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/train_options/models_original.py", line 120, in forward
+    
+x = x + gate_msa.unsqueeze(1) * self.attn(modulate(self.norm1(x), shift_msa, scale_msa))  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+
+      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+x = x + gate_msa.unsqueeze(1) * self.attn(modulate(self.norm1(x), shift_msa, scale_msa))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    x = x + gate_msa.unsqueeze(1) * self.attn(modulate(self.norm1(x), shift_msa, scale_msa))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return self._call_impl(*args, **kwargs)    
+return self._call_impl(*args, **kwargs)  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+
+      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/timm/models/vision_transformer.py", line 86, in forward
+    return forward_call(*args, **kwargs)
+      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/timm/models/vision_transformer.py", line 86, in forward
+return forward_call(*args, **kwargs)
+      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/timm/models/vision_transformer.py", line 86, in forward
+return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/timm/models/vision_transformer.py", line 86, in forward
+        qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, self.head_dim).permute(2, 0, 3, 1, 4)    qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, self.head_dim).permute(2, 0, 3, 1, 4)
+    qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, self.head_dim).permute(2, 0, 3, 1, 4)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, self.head_dim).permute(2, 0, 3, 1, 4)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return self._call_impl(*args, **kwargs)    return self._call_impl(*args, **kwargs)
+return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return forward_call(*args, **kwargs)
+      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return forward_call(*args, **kwargs)return forward_call(*args, **kwargs)
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: HIP out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacty of 31.98 GiB of which 0 bytes is free. Of the allocated memory 31.16 GiB is allocated by PyTorch, and 79.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.    OutOfMemoryErrorreturn F.linear(input, self.weight, self.bias): 
+HIP out of memory. Tried to allocate 192.00 MiB. GPU 1 has a total capacty of 31.98 GiB of which 0 bytes is free. Of the allocated memory 31.16 GiB is allocated by PyTorch, and 79.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONFtorch.cuda
+.OutOfMemoryError: HIP out of memory. Tried to allocate 192.00 MiB. GPU 3 has a total capacty of 31.98 GiB of which 0 bytes is free. Of the allocated memory 31.16 GiB is allocated by PyTorch, and 79.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: HIP out of memory. Tried to allocate 192.00 MiB. GPU 2 has a total capacty of 31.98 GiB of which 0 bytes is free. Of the allocated memory 31.16 GiB is allocated by PyTorch, and 79.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF
+[2024-05-15 00:57:05,195] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 11829) of binary: /public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/python
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+./train_options/train_original.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-05-15_00:57:05
+  host      : f15r3n01
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 11830)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-05-15_00:57:05
+  host      : f15r3n01
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 11838)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-05-15_00:57:05
+  host      : f15r3n01
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 11839)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-05-15_00:57:05
+  host      : f15r3n01
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 11829)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

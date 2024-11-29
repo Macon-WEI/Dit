@@ -1,0 +1,23 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+srun: ROUTE: split_hostlist: hl=f15r2n03 tree_width 0
+[2024-05-12 00:31:20,572] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0512 00:32:31.753975 19632 ProcessGroupNCCL.cpp:686] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=206881488
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0512 00:32:31.753962 19633 ProcessGroupNCCL.cpp:686] [Rank 1] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=188545008
+I0512 00:32:31.753986 19635 ProcessGroupNCCL.cpp:686] [Rank 3] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=211552816
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0512 00:32:31.754005 19634 ProcessGroupNCCL.cpp:686] [Rank 2] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=187677136
+[[34m2024-05-12 00:32:31[0m] Experiment directory created at train-test1_4dcu/014-DiT-B-4
+I0512 00:32:35.389755 19632 ProcessGroupNCCL.cpp:1340] NCCL_DEBUG: info
+[[34m2024-05-12 00:32:37[0m] DiT Parameters: 130,475,648
+[[34m2024-05-12 00:32:40[0m] Dataset contains 254,136 images (/public/home/acr0vd9ik6/project/DiT/train)
+[[34m2024-05-12 00:32:40[0m] Training for 1400 epochs...
+[[34m2024-05-12 00:32:40[0m] Beginning epoch 0...
+[[34m2024-05-12 00:36:52[0m] (step=0000100) Train Loss: 0.4191, Train Steps/Sec: 0.40
+[[34m2024-05-12 00:40:37[0m] (step=0000200) Train Loss: 0.2049, Train Steps/Sec: 0.44
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 61585320 ON f15r2n03 CANCELLED AT 2024-05-12T00:43:17 ***
+slurmstepd: error: *** STEP 61585320.0 ON f15r2n03 CANCELLED AT 2024-05-12T00:43:17 ***
+[2024-05-12 00:43:17,689] torch.distributed.elastic.agent.server.api: [WARNING] Received Signals.SIGTERM death signal, shutting down workers

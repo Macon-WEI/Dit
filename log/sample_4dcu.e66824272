@@ -1,0 +1,1338 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+srun: ROUTE: split_hostlist: hl=b01r3n05 tree_width 0
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,723] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,722] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+[2024-07-08 21:47:54,724] torch.distributed.run: [WARNING] *****************************************
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.799170 32618 socket.cpp:436] [c10d] The server socket has failed to listen on [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.799799 32633 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.799942 32619 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.800781 32629 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.801429 32635 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.802299 32621 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.803668 32616 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.803651 32630 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.803936 32636 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.804118 32643 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.804824 32632 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.805320 32641 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.805573 32624 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.805869 32644 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.806165 32634 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.806561 32627 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.806869 32645 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.807240 32642 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.807947 32625 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.808537 32617 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.809103 32622 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.809635 32620 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.809705 32626 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.810070 32638 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.810514 32639 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.810611 32615 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.810739 32631 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+W0708 21:47:54.810427 32640 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+W0708 21:47:54.810897 32633 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.810910 32633 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.811246 32619 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.811280 32619 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.811376 32637 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+W0708 21:47:54.811450 32629 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.811463 32629 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.811748 32635 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.811764 32635 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.812063 32628 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+W0708 21:47:54.812203 32618 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.812222 32618 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.812335 32621 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.812351 32621 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0708 21:47:54.812378 32614 socket.cpp:436] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+W0708 21:47:54.812861 32630 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.812880 32630 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.813092 32636 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.813110 32636 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.813344 32643 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.813360 32643 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.813657 32644 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.813673 32644 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.813746 32616 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.813762 32616 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.814143 32632 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.814160 32632 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.814422 32641 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.814440 32641 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.814656 32624 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.814671 32624 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.814982 32627 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.815001 32627 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.815296 32634 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.815313 32634 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.815637 32645 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.815654 32645 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.815999 32617 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.816016 32617 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.816051 32642 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.816066 32642 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.816334 32625 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.816351 32625 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.816708 32622 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.816725 32622 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.817299 32626 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.817315 32626 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.817358 32620 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.817373 32620 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.817857 32631 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.817874 32631 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.818253 32615 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.818271 32615 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.818390 32638 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.818408 32638 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.818392 32639 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.818409 32639 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.818708 32637 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.818727 32637 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.818712 32640 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.818727 32640 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.819607 32628 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.819622 32628 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+W0708 21:47:54.819936 32614 socket.cpp:436] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+E0708 21:47:54.819953 32614 socket.cpp:472] [c10d] The server socket has failed to listen on any local network address.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0708 21:48:48.159515  1065 ProcessGroupNCCL.cpp:686] [Rank 1] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: OFF, ID=291729984
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0708 21:48:48.159695  1066 ProcessGroupNCCL.cpp:686] [Rank 2] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: OFF, ID=297300624
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0708 21:48:48.159716  1064 ProcessGroupNCCL.cpp:686] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: OFF, ID=287824000
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0708 21:48:48.159605  1067 ProcessGroupNCCL.cpp:686] [Rank 3] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: OFF, ID=301308704
+I0708 21:49:08.847282  1067 ProcessGroupNCCL.cpp:2780] Rank 3 using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+I0708 21:49:08.847378  1065 ProcessGroupNCCL.cpp:2780] Rank 1 using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+I0708 21:49:08.847455  1064 ProcessGroupNCCL.cpp:2780] Rank 0 using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+I0708 21:49:08.849145  1066 ProcessGroupNCCL.cpp:2780] Rank 2 using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+I0708 21:49:12.519385  1064 ProcessGroupNCCL.cpp:1340] NCCL_DEBUG: N/A
+  0%|          | 0/79 [00:00<?, ?it/s]/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+Traceback (most recent call last):
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 638, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 638, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 638, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 638, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 638, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 638, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 638, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousTimeoutError()
+torch.distributed.elastic.rendezvous.api.RendezvousTimeoutError
+    raise RendezvousTimeoutError()
+torch.distributed.elastic.rendezvous.api.RendezvousTimeoutError
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousTimeoutError()
+torch.distributed.elastic.rendezvous.api.RendezvousTimeoutError
+    raise RendezvousTimeoutError()
+torch.distributed.elastic.rendezvous.api.RendezvousTimeoutError
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousTimeoutError()
+torch.distributed.elastic.rendezvous.api.RendezvousTimeoutError
+    raise RendezvousTimeoutError()
+torch.distributed.elastic.rendezvous.api.RendezvousTimeoutError
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    raise RendezvousTimeoutError()
+torch.distributed.elastic.rendezvous.api.RendezvousTimeoutError
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    raise RendezvousClosedError()
+    raise RendezvousClosedError()
+    raise RendezvousClosedError()
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+    raise RendezvousClosedError()
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    raise RendezvousClosedError()
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+Traceback (most recent call last):
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    run(args)
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return launch_agent(self._config, self._entrypoint, list(args))
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    result = self._invoke_run(role)
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 871, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 705, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._op_executor.run(join_op, deadline)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+srun: error: b01r3n05: tasks 0-8,10-31: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=66824272.0
+slurmstepd: error: *** STEP 66824272.0 ON b01r3n05 CANCELLED AT 2024-07-08T21:58:04 ***
+  1%|▏         | 1/79 [01:35<2:03:57, 95.35s/it]  3%|▎         | 2/79 [02:16<1:21:43, 63.69s/it]  4%|▍         | 3/79 [02:58<1:07:39, 53.41s/it]  5%|▌         | 4/79 [03:39<1:00:48, 48.65s/it]  6%|▋         | 5/79 [04:20<56:51, 46.10s/it]    8%|▊         | 6/79 [05:02<54:07, 44.48s/it]  9%|▉         | 7/79 [05:43<52:07, 43.44s/it] 10%|█         | 8/79 [06:24<50:29, 42.67s/it] 11%|█▏        | 9/79 [07:05<49:11, 42.17s/it] 13%|█▎        | 10/79 [07:47<48:17, 41.99s/it] 14%|█▍        | 11/79 [08:28<47:22, 41.79s/it][2024-07-08 21:58:04,719] torch.distributed.elastic.agent.server.api: [WARNING] Received Signals.SIGTERM death signal, shutting down workers
+[2024-07-08 21:58:04,719] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 1064 closing signal SIGTERM
+[2024-07-08 21:58:04,719] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 1065 closing signal SIGTERM
+[2024-07-08 21:58:04,719] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 1066 closing signal SIGTERM
+[2024-07-08 21:58:04,719] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 1067 closing signal SIGTERM
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = self._invoke_run(role)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 877, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 62, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 32623 got signal: 15
+srun: error: b01r3n05: task 9: Exited with exit code 1

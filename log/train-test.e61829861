@@ -1,0 +1,110 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+[2024-05-15 00:51:14,751] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0515 00:51:48.656702  6121 ProcessGroupNCCL.cpp:686] [Rank 3] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=194861920
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0515 00:51:48.656770  6120 ProcessGroupNCCL.cpp:686] [Rank 2] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=186808352
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0515 00:51:48.656922  6118 ProcessGroupNCCL.cpp:686] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=200342976
+I0515 00:51:48.656940  6119 ProcessGroupNCCL.cpp:686] [Rank 1] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=206500880
+[[34m2024-05-15 00:51:48[0m] Experiment directory created at train-test1_4dcu/019-DiT-XL-4
+I0515 00:52:02.161480  6118 ProcessGroupNCCL.cpp:1340] NCCL_DEBUG: info
+[[34m2024-05-15 00:52:05[0m] DiT Parameters: 673,923,584
+[[34m2024-05-15 00:52:05[0m] Dataset contains 14,241 images (/public/home/acr0vd9ik6/project/DiT/fast-DiT/data1/final)
+[[34m2024-05-15 00:52:05[0m] Training for 1400 epochs...
+[[34m2024-05-15 00:52:05[0m] Beginning epoch 0...
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 272, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 206, in main
+    x = vae.encode(x).latent_dist.sample().mul_(0.18215)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 272, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_original.py", line 206, in main
+    x = vae.encode(x).latent_dist.sample().mul_(0.18215)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+    return method(self, *args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 260, in encode
+    return method(self, *args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 260, in encode
+    h = self.encoder(x)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    h = self.encoder(x)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+        return self._call_impl(*args, **kwargs)return self._call_impl(*args, **kwargs)
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)    
+return forward_call(*args, **kwargs)  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/vae.py", line 172, in forward
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/autoencoders/vae.py", line 172, in forward
+    sample = down_block(sample)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    sample = down_block(sample)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 1465, in forward
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 1465, in forward
+    hidden_states = resnet(hidden_states, temb=None)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    hidden_states = resnet(hidden_states, temb=None)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/resnet.py", line 376, in forward
+    return forward_call(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/diffusers/models/resnet.py", line 376, in forward
+    output_tensor = (input_tensor + hidden_states) / self.output_scale_factor
+torch.cuda.OutOfMemoryError: HIP out of memory. Tried to allocate 2.00 GiB. GPU 2 has a total capacty of 31.98 GiB of which 4.18 MiB is free. Of the allocated memory 23.51 GiB is allocated by PyTorch, and 7.43 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF
+    output_tensor = (input_tensor + hidden_states) / self.output_scale_factor
+torch.cuda.OutOfMemoryError: HIP out of memory. Tried to allocate 2.00 GiB. GPU 3 has a total capacty of 31.98 GiB of which 540.18 MiB is free. Of the allocated memory 21.53 GiB is allocated by PyTorch, and 8.90 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF
+[2024-05-15 00:53:01,035] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 6118 closing signal SIGTERM
+[2024-05-15 00:53:01,055] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 6119 closing signal SIGTERM
+[2024-05-15 00:53:01,333] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 2 (pid: 6120) of binary: /public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/python
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+./train_options/train_original.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-05-15_00:53:01
+  host      : f15r3n01
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 6121)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-05-15_00:53:01
+  host      : f15r3n01
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 6120)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

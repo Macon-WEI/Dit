@@ -1,0 +1,17 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+[2024-05-14 22:33:41,089] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0514 22:34:27.903719 22905 ProcessGroupNCCL.cpp:686] [Rank 3] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=187187520
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0514 22:34:27.904084 22904 ProcessGroupNCCL.cpp:686] [Rank 2] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=187819136
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0514 22:34:27.904103 22903 ProcessGroupNCCL.cpp:686] [Rank 1] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=198632448
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0514 22:34:27.913756 22902 ProcessGroupNCCL.cpp:686] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=213022688
+[[34m2024-05-14 22:34:28[0m] Experiment directory created at train-test1_4dcu/017-DiT-B-4
+I0514 22:34:31.494553 22902 ProcessGroupNCCL.cpp:1340] NCCL_DEBUG: info
+[[34m2024-05-14 22:34:33[0m] DiT Parameters: 129,708,416
+[[34m2024-05-14 22:34:33[0m] Dataset contains 14,241 images (/public/home/acr0vd9ik6/project/DiT/fast-DiT/data1/final)
+[[34m2024-05-14 22:34:34[0m] Training for 1400 epochs...
+[[34m2024-05-14 22:34:34[0m] Beginning epoch 0...
+slurmstepd: error: *** JOB 61817956 ON f15r3n01 CANCELLED AT 2024-05-14T22:34:36 ***

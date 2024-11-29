@@ -1,0 +1,140 @@
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample.py", line 90, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample.py", line 45, in main
+    model.load_state_dict(state_dict,False)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/DiT/lib/python3.12/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for DiT:
+	size mismatch for pos_embed: copying a param with shape torch.Size([1, 64, 768]) from checkpoint, the shape in current model is torch.Size([1, 256, 1152]).
+	size mismatch for x_embedder.proj.weight: copying a param with shape torch.Size([768, 4, 4, 4]) from checkpoint, the shape in current model is torch.Size([1152, 4, 2, 2]).
+	size mismatch for x_embedder.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for t_embedder.mlp.0.weight: copying a param with shape torch.Size([768, 256]) from checkpoint, the shape in current model is torch.Size([1152, 256]).
+	size mismatch for t_embedder.mlp.0.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for t_embedder.mlp.2.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for t_embedder.mlp.2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for y_embedder.embedding_table.weight: copying a param with shape torch.Size([1001, 768]) from checkpoint, the shape in current model is torch.Size([1001, 1152]).
+	size mismatch for blocks.0.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.0.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.0.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.0.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.0.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.0.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.0.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.0.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.0.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.0.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for blocks.1.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.1.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.1.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.1.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.1.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.1.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.1.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.1.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.1.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.1.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for blocks.2.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.2.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.2.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.2.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.2.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.2.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.2.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.2.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.2.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.2.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for blocks.3.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.3.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.3.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.3.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.3.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.3.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.3.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.3.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.3.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.3.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for blocks.4.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.4.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.4.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.4.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.4.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.4.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.4.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.4.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.4.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.4.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for blocks.5.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.5.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.5.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.5.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.5.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.5.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.5.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.5.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.5.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.5.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for blocks.6.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.6.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.6.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.6.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.6.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.6.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.6.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.6.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.6.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.6.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for blocks.7.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.7.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.7.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.7.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.7.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.7.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.7.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.7.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.7.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.7.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for blocks.8.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.8.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.8.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.8.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.8.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.8.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.8.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.8.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.8.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.8.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for blocks.9.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.9.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.9.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.9.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.9.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.9.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.9.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.9.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.9.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.9.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for blocks.10.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.10.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.10.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.10.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.10.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.10.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.10.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.10.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.10.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.10.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for blocks.11.attn.qkv.weight: copying a param with shape torch.Size([2304, 768]) from checkpoint, the shape in current model is torch.Size([3456, 1152]).
+	size mismatch for blocks.11.attn.qkv.bias: copying a param with shape torch.Size([2304]) from checkpoint, the shape in current model is torch.Size([3456]).
+	size mismatch for blocks.11.attn.proj.weight: copying a param with shape torch.Size([768, 768]) from checkpoint, the shape in current model is torch.Size([1152, 1152]).
+	size mismatch for blocks.11.attn.proj.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.11.mlp.fc1.weight: copying a param with shape torch.Size([3072, 768]) from checkpoint, the shape in current model is torch.Size([4608, 1152]).
+	size mismatch for blocks.11.mlp.fc1.bias: copying a param with shape torch.Size([3072]) from checkpoint, the shape in current model is torch.Size([4608]).
+	size mismatch for blocks.11.mlp.fc2.weight: copying a param with shape torch.Size([768, 3072]) from checkpoint, the shape in current model is torch.Size([1152, 4608]).
+	size mismatch for blocks.11.mlp.fc2.bias: copying a param with shape torch.Size([768]) from checkpoint, the shape in current model is torch.Size([1152]).
+	size mismatch for blocks.11.adaLN_modulation.1.weight: copying a param with shape torch.Size([4608, 768]) from checkpoint, the shape in current model is torch.Size([6912, 1152]).
+	size mismatch for blocks.11.adaLN_modulation.1.bias: copying a param with shape torch.Size([4608]) from checkpoint, the shape in current model is torch.Size([6912]).
+	size mismatch for final_layer.linear.weight: copying a param with shape torch.Size([128, 768]) from checkpoint, the shape in current model is torch.Size([32, 1152]).
+	size mismatch for final_layer.linear.bias: copying a param with shape torch.Size([128]) from checkpoint, the shape in current model is torch.Size([32]).
+	size mismatch for final_layer.adaLN_modulation.1.weight: copying a param with shape torch.Size([1536, 768]) from checkpoint, the shape in current model is torch.Size([2304, 1152]).
+	size mismatch for final_layer.adaLN_modulation.1.bias: copying a param with shape torch.Size([1536]) from checkpoint, the shape in current model is torch.Size([2304]).

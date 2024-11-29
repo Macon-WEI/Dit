@@ -1,0 +1,18 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+[2024-08-12 00:10:46,804] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0812 00:11:25.666973  5698 ProcessGroupNCCL.cpp:686] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=215649184
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0812 00:11:25.666985  5699 ProcessGroupNCCL.cpp:686] [Rank 1] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=209448016
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0812 00:11:25.667181  5700 ProcessGroupNCCL.cpp:686] [Rank 2] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=215118112
+I0812 00:11:25.667196  5701 ProcessGroupNCCL.cpp:686] [Rank 3] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=192922736
+[[34m2024-08-12 00:11:25[0m] Experiment directory created at train-test1_4dcu/053-DiT-L-4
+[[34m2024-08-12 00:11:48[0m] Resumed training from checkpoint /public/home/acr0vd9ik6/project/DiT/fast-DiT/train-test1_4dcu/021-DiT-L-4/checkpoints/0050000.pt !
+I0812 00:11:52.230826  5698 ProcessGroupNCCL.cpp:1340] NCCL_DEBUG: info
+[[34m2024-08-12 00:11:54[0m] DiT Parameters: 457,030,784
+[[34m2024-08-12 00:11:55[0m] Dataset contains 14,241 images (/public/home/acr0vd9ik6/project/DiT/fast-DiT/data1/final)
+[[34m2024-08-12 00:11:55[0m] Training for 1 epochs...
+[[34m2024-08-12 00:11:55[0m] Beginning epoch 0...
+slurmstepd: error: *** JOB 68998786 ON f15r1n04 CANCELLED AT 2024-08-12T00:28:11 ***

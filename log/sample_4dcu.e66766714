@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample_ddp.py", line 167, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample_ddp.py", line 50, in main
+    assert torch.cuda.is_available(), "Sampling with DDP requires at least one GPU. sample.py supports CPU-only usage"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Sampling with DDP requires at least one GPU. sample.py supports CPU-only usage

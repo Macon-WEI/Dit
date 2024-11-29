@@ -1,0 +1,22 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+[2024-08-11 21:17:01,500] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0811 21:17:36.125473 14640 ProcessGroupNCCL.cpp:686] [Rank 3] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=195890960
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0811 21:17:36.125480 14637 ProcessGroupNCCL.cpp:686] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=211801408
+I0811 21:17:36.125495 14638 ProcessGroupNCCL.cpp:686] [Rank 1] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=215003136
+I0811 21:17:36.125500 14639 ProcessGroupNCCL.cpp:686] [Rank 2] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=212192784
+[[34m2024-08-11 21:17:36[0m] Experiment directory created at train-test1_4dcu/043-DiT-L-4
+[[34m2024-08-11 21:17:56[0m] Resumed training from checkpoint /public/home/acr0vd9ik6/project/DiT/fast-DiT/train-test1_4dcu/021-DiT-L-4/checkpoints/0050000.pt !
+I0811 21:17:59.467155 14637 ProcessGroupNCCL.cpp:1340] NCCL_DEBUG: info
+[[34m2024-08-11 21:18:01[0m] DiT Parameters: 457,030,784
+[[34m2024-08-11 21:18:01[0m] Dataset contains 14,241 images (/public/home/acr0vd9ik6/project/DiT/fast-DiT/data1/final)
+[[34m2024-08-11 21:18:01[0m] Training for 1 epochs...
+[[34m2024-08-11 21:18:01[0m] Beginning epoch 0...
+MIOpen(HIP): Warning [LoadProgram] sqlite_db.cpp:265: Timeout while waiting for Database: /public/home/acr0vd9ik6/.cache/miopen/2.15.3.0b020ba8a/gfx906_60.ukdb. rc=00000005
+MIOpen(HIP): Warning [LoadProgram] sqlite_db.cpp:265: Timeout while waiting for Database: /public/home/acr0vd9ik6/.cache/miopen/2.15.3.0b020ba8a/gfx906_60.ukdb. rc=00000005
+MIOpen(HIP): Warning [LoadProgram] sqlite_db.cpp:265: Timeout while waiting for Database: /public/home/acr0vd9ik6/.cache/miopen/2.15.3.0b020ba8a/gfx906_60.ukdb. rc=00000005
+MIOpen(HIP): Warning [LoadProgram] sqlite_db.cpp:265: Timeout while waiting for Database: /public/home/acr0vd9ik6/.cache/miopen/2.15.3.0b020ba8a/gfx906_60.ukdb. rc=00000005
+slurmstepd: error: *** JOB 68993147 ON f15r1n04 CANCELLED AT 2024-08-11T21:22:47 ***

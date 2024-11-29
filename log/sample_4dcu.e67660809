@@ -1,0 +1,9 @@
+Counting samples: 0it [00:00, ?it/s]Counting samples: 0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/save_train_set_2_npz.py", line 148, in <module>
+    npz_file = create_npz_from_train_folder_3('/public/home/acr0vd9ik6/project/DiT/train')
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/save_train_set_2_npz.py", line 120, in create_npz_from_train_folder_3
+    samples = np.memmap(npz_path, dtype='uint8', mode='w+', shape=(total_samples, *sample_shape))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/numpy/core/memmap.py", line 268, in __new__
+    mm = mmap.mmap(fid.fileno(), bytes, access=acc, offset=start)
+ValueError: cannot mmap an empty file

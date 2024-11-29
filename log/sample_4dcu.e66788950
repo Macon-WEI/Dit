@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample_ddp.py", line 167, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample_ddp.py", line 54, in main
+    dist.init_process_group("nccl")
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 74, in wrapper
+    func_return = func(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1141, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/rendezvous.py", line 231, in _env_rendezvous_handler
+    rank = int(_get_env_or_raise("RANK"))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/torch-2.1.0.dtk-24.04.cp310/lib/python3.10/site-packages/torch/distributed/rendezvous.py", line 216, in _get_env_or_raise
+    raise _env_error(env_var)
+ValueError: Error initializing torch.distributed using env:// rendezvous: environment variable RANK expected, but not set

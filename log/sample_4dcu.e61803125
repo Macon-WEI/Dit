@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample.py", line 91, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample.py", line 45, in main
+    model.load_state_dict(state_dict,False)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/DiT/lib/python3.12/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for DiT:
+	size mismatch for y_embedder.embedding_table.weight: copying a param with shape torch.Size([2, 768]) from checkpoint, the shape in current model is torch.Size([1001, 768]).

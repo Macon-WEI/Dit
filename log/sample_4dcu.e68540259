@@ -1,0 +1,141 @@
+mkdir failed on directory /var/lib/samba/lock/msg.lock: Permission denied
+[2024-08-04 15:06:04,502] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0804 15:06:38.274178 12903 ProcessGroupNCCL.cpp:686] [Rank 3] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=191978032
+I0804 15:06:38.274184 12901 ProcessGroupNCCL.cpp:686] [Rank 1] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=210103824
+I0804 15:06:38.274187 12902 ProcessGroupNCCL.cpp:686] [Rank 2] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=205573664
+I0804 15:06:38.274202 12900 ProcessGroupNCCL.cpp:686] [Rank 0] ProcessGroupNCCL initialization options:NCCL_ASYNC_ERROR_HANDLING: 1, NCCL_DESYNC_DEBUG: 0, NCCL_ENABLE_TIMING: 0, NCCL_BLOCKING_WAIT: 0, TIMEOUT(ms): 1800000, USE_HIGH_PRIORITY_STREAM: 0, TORCH_DISTRIBUTED_DEBUG: OFF, NCCL_DEBUG: info, ID=202718048
+[[34m2024-08-04 15:06:38[0m] Experiment directory created at train-test1_4dcu/033-DiT-L-4
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 364, in <module>
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 364, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 364, in <module>
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 364, in <module>
+    main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 210, in main
+        main(args)    main(args)
+main(args)
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 210, in main
+
+  File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 210, in main
+      File "/public/home/acr0vd9ik6/project/DiT/fast-DiT/./train_options/train_visualize.py", line 210, in main
+state_dict=torch.load(args.resume_from_checkpoint)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1014, in load
+    state_dict=torch.load(args.resume_from_checkpoint)
+      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1014, in load
+    state_dict=torch.load(args.resume_from_checkpoint)state_dict=torch.load(args.resume_from_checkpoint)
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1014, in load
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1014, in load
+        return _load(opened_zipfile,        return _load(opened_zipfile,
+return _load(opened_zipfile,return _load(opened_zipfile,
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1422, in _load
+
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1422, in _load
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1422, in _load
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1422, in _load
+    result = unpickler.load()
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1392, in persistent_load
+            result = unpickler.load()result = unpickler.load()result = unpickler.load()
+
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1392, in persistent_load
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1392, in persistent_load
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1392, in persistent_load
+    typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1366, in load_tensor
+            typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1366, in load_tensor
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1366, in load_tensor
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 1366, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 381, in default_restore_location
+    result = fn(storage, location)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 279, in _cuda_deserialize
+    wrap_storage=restore_location(storage, location),
+          File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 381, in default_restore_location
+wrap_storage=restore_location(storage, location),wrap_storage=restore_location(storage, location),
+
+      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 381, in default_restore_location
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 381, in default_restore_location
+return obj.cuda(device)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/_utils.py", line 114, in _cuda
+    result = fn(storage, location)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 279, in _cuda_deserialize
+    result = fn(storage, location)    
+result = fn(storage, location)  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 279, in _cuda_deserialize
+
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/serialization.py", line 279, in _cuda_deserialize
+    return obj.cuda(device)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/_utils.py", line 114, in _cuda
+    return obj.cuda(device)
+      File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/_utils.py", line 114, in _cuda
+return obj.cuda(device)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/_utils.py", line 114, in _cuda
+    untyped_storage = torch.UntypedStorage(
+    torch.cudauntyped_storage = torch.UntypedStorage(.
+OutOfMemoryError    torch.cuda    : untyped_storage = torch.UntypedStorage(.untyped_storage = torch.UntypedStorage(HIP out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacty of 15.98 GiB of which 0 bytes is free. Of the allocated memory 5.28 GiB is allocated by PyTorch, and 1.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF
+OutOfMemoryError
+
+: torch.cudatorch.cudaHIP out of memory. Tried to allocate 12.00 MiB. GPU 0 has a total capacty of 15.98 GiB of which 0 bytes is free. Of the allocated memory 3.57 GiB is allocated by PyTorch, and 487.00 KiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF..
+OutOfMemoryErrorOutOfMemoryError: : HIP out of memory. Tried to allocate 12.00 MiB. GPU 0 has a total capacty of 15.98 GiB of which 0 bytes is free. Of the allocated memory 3.57 GiB is allocated by PyTorch, and 487.00 KiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONFHIP out of memory. Tried to allocate 12.00 MiB. GPU 0 has a total capacty of 15.98 GiB of which 0 bytes is free. Of the allocated memory 3.56 GiB is allocated by PyTorch, and 487.00 KiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_HIP_ALLOC_CONF
+
+[2024-08-04 15:07:10,663] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 12900) of binary: /public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/python
+Traceback (most recent call last):
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/public/home/acr0vd9ik6/miniconda3/envs/dtk23.10_torch2.1_python3.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+./train_options/train_visualize.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-08-04_15:07:10
+  host      : e10r3n04
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 12901)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-08-04_15:07:10
+  host      : e10r3n04
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 12902)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-08-04_15:07:10
+  host      : e10r3n04
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 12903)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-08-04_15:07:10
+  host      : e10r3n04
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 12900)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

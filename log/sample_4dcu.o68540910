@@ -1,0 +1,82 @@
+Starting rank=3, seed=3, world_size=4.Starting rank=1, seed=1, world_size=4.
+
+Starting rank=2, seed=2, world_size=4.
+Starting rank=0, seed=0, world_size=4.
+Memory Allocated: 8716.79 MB
+Memory Reserved: 8734.00 MB
+Memory Allocated: 8716.79 MB
+Memory Reserved: 8734.00 MB
+Memory Allocated: 8716.79 MB
+Memory Reserved: 8734.00 MB
+Memory Allocated: 8716.79 MB
+Memory Reserved: 8734.00 MB
+e10r3n04:5231:5231 [0] NCCL INFO Bootstrap : Using ib0:11.5.10.45<0>
+e10r3n04:5231:5231 [0] NCCL INFO NET/Plugin : No plugin found (librccl-net.so), using internal implementation
+RCCL version 2.13.4+hip5.4 HEAD:fc5908f
+e10r3n04:5231:7290 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:11.5.10.45<0>
+e10r3n04:5231:7290 [0] NCCL INFO Using network IB
+e10r3n04:5232:5232 [1] NCCL INFO Bootstrap : Using ib0:11.5.10.45<0>
+e10r3n04:5232:5232 [1] NCCL INFO NET/Plugin : No plugin found (librccl-net.so), using internal implementation
+e10r3n04:5234:5234 [3] NCCL INFO Bootstrap : Using ib0:11.5.10.45<0>
+e10r3n04:5234:5234 [3] NCCL INFO NET/Plugin : No plugin found (librccl-net.so), using internal implementation
+e10r3n04:5233:5233 [2] NCCL INFO Bootstrap : Using ib0:11.5.10.45<0>
+e10r3n04:5233:5233 [2] NCCL INFO NET/Plugin : No plugin found (librccl-net.so), using internal implementation
+e10r3n04:5232:7292 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:11.5.10.45<0>
+e10r3n04:5232:7292 [1] NCCL INFO Using network IB
+e10r3n04:5234:7293 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:11.5.10.45<0>
+e10r3n04:5234:7293 [3] NCCL INFO Using network IB
+e10r3n04:5233:7294 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:11.5.10.45<0>
+e10r3n04:5233:7294 [2] NCCL INFO Using network IB
+e10r3n04:5232:7292 [1] NCCL INFO rocm_smi_lib: version 2.8.0.0
+e10r3n04:5233:7294 [2] NCCL INFO rocm_smi_lib: version 2.8.0.0
+e10r3n04:5231:7290 [0] NCCL INFO rocm_smi_lib: version 2.8.0.0
+e10r3n04:5234:7293 [3] NCCL INFO rocm_smi_lib: version 2.8.0.0
+e10r3n04:5233:7294 [2] NCCL INFO Setting affinity for GPU 2 to ff0000
+e10r3n04:5231:7290 [0] NCCL INFO Setting affinity for GPU 0 to ff
+e10r3n04:5232:7292 [1] NCCL INFO Setting affinity for GPU 1 to ff00
+e10r3n04:5234:7293 [3] NCCL INFO Setting affinity for GPU 3 to ff000000
+e10r3n04:5234:7293 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 comm 0x2b01b0000ab0 nRanks 04 busId 63000
+e10r3n04:5231:7290 [0] NCCL INFO Channel 00/02 :    0   1   2   3
+e10r3n04:5231:7290 [0] NCCL INFO Channel 01/02 :    0   1   2   3
+e10r3n04:5231:7290 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 comm 0x2b6f88000ab0 nRanks 04 busId 4000
+e10r3n04:5232:7292 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 comm 0x2ae2ec000ab0 nRanks 04 busId 26000
+e10r3n04:5233:7294 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 comm 0x2ae4fc000ab0 nRanks 04 busId 43000
+e10r3n04:5234:7293 [3] NCCL INFO Channel 00 : 3[63000] -> 0[4000] via P2P/IPC comm 0x2b01b0000ab0 nRanks 04
+e10r3n04:5234:7293 [3] NCCL INFO Channel 01 : 3[63000] -> 0[4000] via P2P/IPC comm 0x2b01b0000ab0 nRanks 04
+e10r3n04:5231:7290 [0] NCCL INFO Channel 00 : 0[4000] -> 1[26000] via P2P/IPC comm 0x2b6f88000ab0 nRanks 04
+e10r3n04:5233:7294 [2] NCCL INFO Channel 00 : 2[43000] -> 3[63000] via P2P/IPC comm 0x2ae4fc000ab0 nRanks 04
+e10r3n04:5231:7290 [0] NCCL INFO Channel 01 : 0[4000] -> 1[26000] via P2P/IPC comm 0x2b6f88000ab0 nRanks 04
+e10r3n04:5233:7294 [2] NCCL INFO Channel 01 : 2[43000] -> 3[63000] via P2P/IPC comm 0x2ae4fc000ab0 nRanks 04
+e10r3n04:5234:7293 [3] NCCL INFO Connected all rings comm 0x2b01b0000ab0 nRanks 04 busId 63000
+e10r3n04:5234:7293 [3] NCCL INFO Channel 00 : 3[63000] -> 2[43000] via P2P/IPC comm 0x2b01b0000ab0 nRanks 04
+e10r3n04:5234:7293 [3] NCCL INFO Channel 01 : 3[63000] -> 2[43000] via P2P/IPC comm 0x2b01b0000ab0 nRanks 04
+e10r3n04:5232:7292 [1] NCCL INFO Channel 00 : 1[26000] -> 2[43000] via P2P/IPC comm 0x2ae2ec000ab0 nRanks 04
+e10r3n04:5232:7292 [1] NCCL INFO Channel 01 : 1[26000] -> 2[43000] via P2P/IPC comm 0x2ae2ec000ab0 nRanks 04
+e10r3n04:5231:7290 [0] NCCL INFO Connected all rings comm 0x2b6f88000ab0 nRanks 04 busId 4000
+e10r3n04:5232:7292 [1] NCCL INFO Connected all rings comm 0x2ae2ec000ab0 nRanks 04 busId 26000
+e10r3n04:5233:7294 [2] NCCL INFO Connected all rings comm 0x2ae4fc000ab0 nRanks 04 busId 43000
+e10r3n04:5232:7292 [1] NCCL INFO Channel 00 : 1[26000] -> 0[4000] via P2P/IPC comm 0x2ae2ec000ab0 nRanks 04
+e10r3n04:5232:7292 [1] NCCL INFO Channel 01 : 1[26000] -> 0[4000] via P2P/IPC comm 0x2ae2ec000ab0 nRanks 04
+e10r3n04:5233:7294 [2] NCCL INFO Channel 00 : 2[43000] -> 1[26000] via P2P/IPC comm 0x2ae4fc000ab0 nRanks 04
+e10r3n04:5233:7294 [2] NCCL INFO Channel 01 : 2[43000] -> 1[26000] via P2P/IPC comm 0x2ae4fc000ab0 nRanks 04
+e10r3n04:5231:7290 [0] NCCL INFO Connected all trees comm 0x2b6f88000ab0 nRanks 04 busId 4000
+e10r3n04:5231:7290 [0] NCCL INFO Using tuning table 0 with LL128 disabled
+e10r3n04:5231:7290 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 8/8/256
+e10r3n04:5231:7290 [0] NCCL INFO 2 coll channels, 2 p2p channels, 2 p2p channels per peer
+e10r3n04:5234:7293 [3] NCCL INFO Connected all trees comm 0x2b01b0000ab0 nRanks 04 busId 63000
+e10r3n04:5234:7293 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 8/8/256
+e10r3n04:5234:7293 [3] NCCL INFO 2 coll channels, 2 p2p channels, 2 p2p channels per peer
+e10r3n04:5232:7292 [1] NCCL INFO Connected all trees comm 0x2ae2ec000ab0 nRanks 04 busId 26000
+e10r3n04:5233:7294 [2] NCCL INFO Connected all trees comm 0x2ae4fc000ab0 nRanks 04 busId 43000
+e10r3n04:5232:7292 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 8/8/256
+e10r3n04:5232:7292 [1] NCCL INFO 2 coll channels, 2 p2p channels, 2 p2p channels per peer
+e10r3n04:5233:7294 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 8/8/256
+e10r3n04:5233:7294 [2] NCCL INFO 2 coll channels, 2 p2p channels, 2 p2p channels per peer
+e10r3n04:5233:7294 [2] NCCL INFO comm 0x2ae4fc000ab0 rank 2 nranks 4 cudaDev 2 busId 43000 localSize 136 used 37760704 bytes - Init COMPLETE
+e10r3n04:5231:7290 [0] NCCL INFO comm 0x2b6f88000ab0 rank 0 nranks 4 cudaDev 0 busId 4000 localSize 136 used 33566400 bytes - Init COMPLETE
+e10r3n04:5234:7293 [3] NCCL INFO comm 0x2b01b0000ab0 rank 3 nranks 4 cudaDev 3 busId 63000 localSize 136 used 25177792 bytes - Init COMPLETE
+e10r3n04:5232:7292 [1] NCCL INFO comm 0x2ae2ec000ab0 rank 1 nranks 4 cudaDev 1 busId 26000 localSize 136 used 37760704 bytes - Init COMPLETE
+x.shape[0] is  8
+x.shape[0] is  8
+x.shape[0] is  8
+x.shape[0] is  8

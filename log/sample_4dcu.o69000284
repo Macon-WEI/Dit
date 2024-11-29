@@ -1,0 +1,8 @@
+device_str: device_str:   cuda:3cuda:2device_str: 
+
+ cuda:1device_str: 
+ cuda:0
+Starting rank=2, seed=2, world_size=4.
+Starting rank=0, seed=0, world_size=4.
+Starting rank=1, seed=1, world_size=4.
+Starting rank=3, seed=3, world_size=4.
