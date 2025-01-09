@@ -6,3 +6,7 @@ inpaint-train-results/
 train-results/
 
 sd-vae-ft-mse/diffusion_pytorch_model.safetensors
+
+*.pyc
+
+tmux*
