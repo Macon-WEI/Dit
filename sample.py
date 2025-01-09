@@ -16,6 +16,8 @@ from diffusers.models import AutoencoderKL
 from download import find_model
 from models import DiT_models
 import argparse
+import os
+from glob import glob
 
 
 def main(args):
@@ -41,10 +43,12 @@ def main(args):
     model.load_state_dict(state_dict)
     model.eval()  # important!
     diffusion = create_diffusion(str(args.num_sampling_steps))
-    vae = AutoencoderKL.from_pretrained(f"stabilityai/sd-vae-ft-{args.vae}").to(device)
+    # vae = AutoencoderKL.from_pretrained(f"stabilityai/sd-vae-ft-{args.vae}").to(device)
+    vae = AutoencoderKL.from_pretrained(f"/home/tongji209/majiawei/Dit/Dit/sd-vae-ft-mse").to(device)
 
     # Labels to condition the model with (feel free to change):
-    class_labels = [207, 360, 387, 974, 88, 979, 417, 279]
+    # class_labels = [207, 360, 387, 974, 88, 979, 417, 279]
+    class_labels = [0,0,0,0,0,0,0,0,]
 
     # Create sampling noise:
     n = len(class_labels)
@@ -53,7 +57,8 @@ def main(args):
 
     # Setup classifier-free guidance:
     z = torch.cat([z, z], 0)
-    y_null = torch.tensor([1000] * n, device=device)
+    # y_null = torch.tensor([1000] * n, device=device)
+    y_null = torch.tensor([args.num_classes] * n, device=device)
     y = torch.cat([y, y_null], 0)
     model_kwargs = dict(y=y, cfg_scale=args.cfg_scale)
 
@@ -64,8 +69,15 @@ def main(args):
     samples, _ = samples.chunk(2, dim=0)  # Remove null class samples
     samples = vae.decode(samples / 0.18215).sample
 
-    # Save and display images:
-    save_image(samples, "sample.png", nrow=4, normalize=True, value_range=(-1, 1))
+    if args.result_dir=="":
+        # Save and display images:
+        save_image(samples, "sample.png", nrow=4, normalize=True, value_range=(-1, 1))
+    else:
+        if not os.path.exists(args.result_dir):
+            os.makedirs(args.result_dir,exist_ok=True)
+        img_index = len(glob(f"{args.result_dir}/*"))
+        img_name=f"sample-{img_index:03d}.png"
+        save_image(samples, os.path.join(args.result_dir,img_name), nrow=4, normalize=True, value_range=(-1, 1))
 
 
 if __name__ == "__main__":
@@ -79,5 +91,6 @@ if __name__ == "__main__":
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--ckpt", type=str, default=None,
                         help="Optional path to a DiT checkpoint (default: auto-download a pre-trained DiT-XL/2 model).")
+    parser.add_argument("--result-dir", type=str, default="")
     args = parser.parse_args()
     main(args)

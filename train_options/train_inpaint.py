@@ -29,11 +29,12 @@ import os
 os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'max_split_size_mb:128' # 防止内存碎片化，提高内存分配效率，减少内存分配失败
 
 
-from models_original import DiT_models
+from models_inpaint import DiT_models
 import sys
 sys.path.append(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 from diffusion import create_diffusion
 from diffusers.models import AutoencoderKL
+from data.dataset import PairedImageDataset
 
 
 #################################################################################
@@ -117,6 +118,8 @@ def main(args):
     """
     assert torch.cuda.is_available(), "Training currently requires at least one GPU."
 
+
+
     # Setup DDP:
     dist.init_process_group("nccl")
     assert args.global_batch_size % dist.get_world_size() == 0, f"Batch size must be divisible by world size."
@@ -147,9 +150,9 @@ def main(args):
     latent_size = args.image_size // 8
     model = DiT_models[args.model](
         input_size=latent_size,
-        num_classes=args.num_classes,
-        # con_img_size=args.img_size,
-        # con_img_channels=3,
+        # num_classes=args.num_classes,
+        con_img_size=args.image_size,
+        con_img_channels=3,
     ).to(device)
     # Note that parameter initialization is done within the DiT constructor
     ema = deepcopy(model).to(device)  # Create an EMA of the model for use after training
@@ -188,7 +191,15 @@ def main(args):
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5], inplace=True)
     ])
-    dataset = ImageFolder(args.data_path, transform=transform)
+    # dataset = ImageFolder(args.data_path, transform=transform)
+
+    # train_dir="/home/tongji209/majiawei/Dit/dataset/train/eroded"
+    # gt_dir="/home/tongji209/majiawei/Dit/dataset/train/real"
+    train_dir=args.train_data_path
+    gt_dir=args.gt_data_path
+    dataset=PairedImageDataset(train_dir,gt_dir,transform)
+    print(train_dir,gt_dir)
+
     sampler = DistributedSampler(
         dataset,
         num_replicas=dist.get_world_size(),
@@ -206,8 +217,10 @@ def main(args):
         pin_memory=True,
         drop_last=True
     )
-    logger.info(f"Dataset contains {len(dataset):,} images ({args.data_path})")
+    logger.info(f"Dataset contains {len(dataset):,} train images ({args.train_data_path})")
+    logger.info(f"Dataset contains {len(dataset):,} gt images ({args.gt_data_path})")
 
+    # return
     # Prepare models for training:
     update_ema(ema, model.module, decay=0)  # Ensure EMA is initialized with synced weights
     model.train()  # important! This enables embedding dropout for classifier-free guidance
@@ -281,11 +294,12 @@ def main(args):
 if __name__ == "__main__":
     # Default args here will train DiT-XL/2 with the hyperparameters we used in our paper (except training iters).
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data-path", type=str, required=True)
+    parser.add_argument("--train-data-path", type=str, required=True)
+    parser.add_argument("--gt-data-path", type=str, required=True)
     parser.add_argument("--results-dir", type=str, default="results")
     parser.add_argument("--model", type=str, choices=list(DiT_models.keys()), default="DiT-XL/2")
     parser.add_argument("--image-size", type=int, choices=[256, 512], default=256)
-    parser.add_argument("--num-classes", type=int, default=1000)
+    # parser.add_argument("--num-classes", type=int, default=1000)
     parser.add_argument("--epochs", type=int, default=1400)
     parser.add_argument("--global-batch-size", type=int, default=256)
     parser.add_argument("--global-seed", type=int, default=0)

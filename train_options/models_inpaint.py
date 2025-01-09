@@ -223,7 +223,7 @@ class DiT(nn.Module):
         num_heads=16,
         mlp_ratio=4.0,
         class_dropout_prob=0.1,
-        num_classes=1000,
+        # num_classes=1000,
         learn_sigma=True,
         con_img_size=256,
         con_img_channels=3,
@@ -237,9 +237,9 @@ class DiT(nn.Module):
 
         self.x_embedder = PatchEmbed(input_size, patch_size, in_channels, hidden_size, bias=True)
         self.t_embedder = TimestepEmbedder(hidden_size)
-        self.y_embedder = LabelEmbedder(num_classes, hidden_size, class_dropout_prob)
+        # self.y_embedder = LabelEmbedder(num_classes, hidden_size, class_dropout_prob)
 
-        # self.y_embedder=ImageEncoder(img_size=con_img_size,img_channels=con_img_channels,vae_size=input_size,vae_patch_size=patch_size,depth=depth,num_heads=num_heads,mlp_ratio=mlp_ratio,hidden_size=hidden_size)
+        self.y_embedder=ImageEncoder(img_size=con_img_size,img_channels=con_img_channels,vae_size=input_size,vae_patch_size=patch_size,depth=depth,num_heads=num_heads,mlp_ratio=mlp_ratio,hidden_size=hidden_size)
 
         num_patches = self.x_embedder.num_patches
         # Will use fixed sin-cos embedding:
@@ -312,8 +312,8 @@ class DiT(nn.Module):
         """
         x = self.x_embedder(x) + self.pos_embed  # (N, T, D), where T = H * W / patch_size ** 2
         t = self.t_embedder(t)                   # (N, D)
-        y = self.y_embedder(y, self.training)    # (N, D)
-        # y = self.y_embedder(y)    # (N, D)
+        # y = self.y_embedder(y, self.training)    # (N, D)
+        y = self.y_embedder(y)    # (N, D)
 
         c = t + y                                # (N, D)
         for block in self.blocks:
