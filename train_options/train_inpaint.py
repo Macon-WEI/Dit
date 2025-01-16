@@ -178,7 +178,7 @@ def main(args):
     model = DDP(model.to(device), device_ids=[rank])
     diffusion = create_diffusion(timestep_respacing="")  # default: 1000 steps, linear noise schedule
     # vae = AutoencoderKL.from_pretrained(f"stabilityai/sd-vae-ft-{args.vae}").to(device)
-    vae = AutoencoderKL.from_pretrained(f"/home/tongji209/majiawei/Dit/Dit/sd-vae-ft-mse").to(device)
+    vae = AutoencoderKL.from_pretrained(f"./sd-vae-ft-mse").to(device)
     logger.info(f"DiT Parameters: {sum(p.numel() for p in model.parameters()):,}")
 
     # # Setup optimizer (we used default Adam betas=(0.9, 0.999) and a constant learning rate of 1e-4 in our paper):
@@ -239,12 +239,25 @@ def main(args):
         for x, y in loader:
             x = x.to(device)
             y = y.to(device)
+            # with torch.no_grad():
+            #     # Map input images to latent space + normalize latents:
+            #     x = vae.encode(x).latent_dist.sample().mul_(0.18215)
+
+            # t = torch.randint(0, diffusion.num_timesteps, (x.shape[0],), device=device)
+            # model_kwargs = dict(y=y)
+            # loss_dict = diffusion.training_losses(model, x, t, model_kwargs)
+
             with torch.no_grad():
                 # Map input images to latent space + normalize latents:
-                x = vae.encode(x).latent_dist.sample().mul_(0.18215)
-            t = torch.randint(0, diffusion.num_timesteps, (x.shape[0],), device=device)
-            model_kwargs = dict(y=y)
-            loss_dict = diffusion.training_losses(model, x, t, model_kwargs)
+                y = vae.encode(y).latent_dist.sample().mul_(0.18215)
+
+            t = torch.randint(0, diffusion.num_timesteps, (y.shape[0],), device=device)
+            model_kwargs = dict(y=x)
+            loss_dict = diffusion.training_losses(model, y, t, model_kwargs)
+
+
+
+
             loss = loss_dict["loss"].mean()
             opt.zero_grad()
             loss.backward()
@@ -283,6 +296,22 @@ def main(args):
                     torch.save(checkpoint, checkpoint_path)
                     logger.info(f"Saved checkpoint to {checkpoint_path}")
                 dist.barrier()
+
+    # 训练结束后保存ckpt
+    try:
+        if rank == 0:
+            checkpoint = {
+                "model": model.module.state_dict(),
+                "ema": ema.state_dict(),
+                "opt": opt.state_dict(),
+                "args": args
+            }
+            checkpoint_path = f"{checkpoint_dir}/final.pt"
+            torch.save(checkpoint, checkpoint_path)
+            logger.info(f"Saved checkpoint to {checkpoint_path}")
+        dist.barrier()
+    except Exception as e:
+        print("训练结束后保存ckpt 失败",e)
 
     model.eval()  # important! This disables randomized embedding dropout
     # do any sampling/FID calculation/etc. with ema (or model) in eval mode ...
