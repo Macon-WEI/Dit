@@ -10,3 +10,5 @@ sd-vae-ft-mse/diffusion_pytorch_model.safetensors
 *.pyc
 
 tmux*
+
+train-inpaint.sh
