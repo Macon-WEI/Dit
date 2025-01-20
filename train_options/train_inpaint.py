@@ -142,6 +142,10 @@ def main(args):
         os.makedirs(checkpoint_dir, exist_ok=True)
         logger = create_logger(experiment_dir)
         logger.info(f"Experiment directory created at {experiment_dir}")
+        logger.info(f"train_data_path : {args.train_data_path}")
+        logger.info(f"gt_data_path : {args.gt_data_path}")
+        logger.info(f"global-batch-size : {args.global_batch_size}")
+        logger.info(f"epochs : {args.epochs}")
     else:
         logger = create_logger(None)
 
@@ -187,7 +191,7 @@ def main(args):
     # Setup data:
     transform = transforms.Compose([
         transforms.Lambda(lambda pil_image: center_crop_arr(pil_image, args.image_size)),
-        transforms.RandomHorizontalFlip(),
+        # transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5], inplace=True)
     ])
@@ -237,6 +241,7 @@ def main(args):
         sampler.set_epoch(epoch)
         logger.info(f"Beginning epoch {epoch}...")
         for x, y in loader:
+            # logger.info(f"train_steps {train_steps}")
             x = x.to(device)
             y = y.to(device)
             # with torch.no_grad():
@@ -268,6 +273,7 @@ def main(args):
             running_loss += loss.item()
             log_steps += 1
             train_steps += 1
+            # print("train_steps",train_steps)
             if train_steps % args.log_every == 0:
                 # Measure training speed:
                 torch.cuda.synchronize()

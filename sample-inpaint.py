@@ -28,9 +28,43 @@ from models_inpaint import DiT_models
 from train_inpaint import center_crop_arr
 
 
+def save_gt_img(transform,result_dir,gt_prefix,sample_idx):
+    img_list=[]
+    for i in sample_idx:
+        yy=Image.open(gt_prefix+f"{i}.jpg").convert("RGB")
+        yy=transform(yy)
+        yy=yy.unsqueeze(0)
+        img_list.append(yy)
+
+    y=torch.cat(tuple(img_list),0)
+
+    
+    if not os.path.exists(result_dir):
+        os.makedirs(result_dir,exist_ok=True)
+    # img_index = len(glob(f"{result_dir}/*"))
+    img_name=f"gt.png"
+    save_image(y, os.path.join(result_dir,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+
+def save_train_img(transform,result_dir,train_prefix,sample_idx):
+    img_list=[]
+    for i in sample_idx:
+        yy=Image.open(train_prefix+f"{i}.jpg").convert("RGB")
+        yy=transform(yy)
+        yy=yy.unsqueeze(0)
+        img_list.append(yy)
+
+    y=torch.cat(tuple(img_list),0)
+
+    
+    if not os.path.exists(result_dir):
+        os.makedirs(result_dir,exist_ok=True)
+    # img_index = len(glob(f"{result_dir}/*"))
+    img_name=f"source.png"
+    save_image(y, os.path.join(result_dir,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+
 def main(args):
 
-    torch.cuda.set_device(6)  # 设置默认 GPU 为 ID 0
+    # torch.cuda.set_device(6)  # 设置默认 GPU 为 ID 0
 
 
     # Setup PyTorch:
@@ -67,32 +101,46 @@ def main(args):
 
     transform=transforms.Compose([
         transforms.Lambda(lambda pil_image: center_crop_arr(pil_image, 256)),
-        transforms.RandomHorizontalFlip(),
+        # transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5], inplace=True)
     ])
 
-    y0=Image.open("/remote-home/zhangxinyue/DiT/train/source/eroded_0.jpg").convert("RGB")
-    y0=transform(y0)
-    y0=y0.unsqueeze(0)
+    train_prefix="/home/tongji209/majiawei/Dit/dataset/train/source/eroded_"
+    gt_prefix="/home/tongji209/majiawei/Dit/dataset/train/target/target_"
+    # y0=Image.open("/home/tongji209/majiawei/Dit/dataset/train/source/eroded_0.jpg").convert("RGB")
+    # y0=transform(y0)
+    # y0=y0.unsqueeze(0)
 
-    y1=Image.open("/remote-home/zhangxinyue/DiT/train/source/eroded_1.jpg").convert("RGB")
-    y1=transform(y1)
-    y1=y1.unsqueeze(0)
+    # y1=Image.open("/home/tongji209/majiawei/Dit/dataset/train/source/eroded_1.jpg").convert("RGB")
+    # y1=transform(y1)
+    # y1=y1.unsqueeze(0)
 
-    y2=Image.open("/remote-home/zhangxinyue/DiT/train/source/eroded_2.jpg").convert("RGB")
-    y2=transform(y2)
-    y2=y2.unsqueeze(0)
+    # y2=Image.open("/home/tongji209/majiawei/Dit/dataset/train/source/eroded_2.jpg").convert("RGB")
+    # y2=transform(y2)
+    # y2=y2.unsqueeze(0)
 
-    y3=Image.open("/remote-home/zhangxinyue/DiT/train/source/eroded_3.jpg").convert("RGB")
-    y3=transform(y3)
-    y3=y3.unsqueeze(0)
+    # y3=Image.open("/home/tongji209/majiawei/Dit/dataset/train/source/eroded_3.jpg").convert("RGB")
+    # y3=transform(y3)
+    # y3=y3.unsqueeze(0)
 
-    y=torch.cat((y0,y1,y2,y3),0).to(device)
+    # y=torch.cat((y0,y1,y2,y3),0).to(device)
+    sample_idx=[0,1,2,3]
+    img_list=[]
+    for i in sample_idx:
+        yy=Image.open(train_prefix+f"{i}.jpg").convert("RGB")
+        yy=transform(yy)
+        yy=yy.unsqueeze(0)
+        img_list.append(yy)
 
-    save_image(y, "sample-inapint-2.png", nrow=4, normalize=True, value_range=(-1, 1))
+    
 
-    return
+    y=torch.cat(tuple(img_list),0).to(device)
+
+
+    # save_image(y, "sample-inapint-2.png", nrow=4, normalize=True, value_range=(-1, 1))
+
+    # return
 
     sample_num=y.shape[0]
 
@@ -133,8 +181,17 @@ def main(args):
         if not os.path.exists(args.result_dir):
             os.makedirs(args.result_dir,exist_ok=True)
         img_index = len(glob(f"{args.result_dir}/*"))
-        img_name=f"sample-inapint-{img_index:03d}.png"
-        save_image(samples, os.path.join(args.result_dir,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+        img_folder_path=os.path.join(args.result_dir,f"sample-inapint-{img_index:03d}")
+        # img_name=f"sample-inapint-{img_index:03d}.png"
+        if not os.path.exists(img_folder_path):
+            os.makedirs(img_folder_path,exist_ok=True)
+        img_name=f"generated.png"
+        save_image(samples, os.path.join(img_folder_path,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+        save_gt_img(transform,img_folder_path,gt_prefix,sample_idx)
+        save_train_img(transform,img_folder_path,train_prefix,sample_idx)
+
+
+
 
 
 if __name__ == "__main__":

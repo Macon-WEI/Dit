@@ -1,12 +1,10 @@
 torchrun --nnodes=1 \
---nproc_per_node=4 \
+--nproc_per_node=1 \
 ./train_options/train_inpaint.py \
 --model DiT-L/4 \
---train-data-path /remote-home/zhangxinyue/DiT/train/source \
---gt-data-path /remote-home/zhangxinyue/DiT/train/target \
+--train-data-path /home/tongji209/majiawei/Dit/dataset/train/source-10 \
+--gt-data-path /home/tongji209/majiawei/Dit/dataset/train/target-10 \
 --results-dir inpaint-train-results \
---global-batch-size 256 \
---epochs 1400 
-# --num-classes 0
-
-
+--log-every 1 \
+--global-batch-size 10 \
+--epochs 600
