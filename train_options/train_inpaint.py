@@ -17,6 +17,7 @@ from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
 from torchvision.datasets import ImageFolder
 from torchvision import transforms
+from torchvision.utils import save_image
 import numpy as np
 from collections import OrderedDict
 from PIL import Image
@@ -35,6 +36,7 @@ sys.path.append(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 from diffusion import create_diffusion
 from diffusers.models import AutoencoderKL
 from data.dataset import PairedImageDataset
+from visualize import visualize_log
 
 
 #################################################################################
@@ -132,6 +134,7 @@ def main(args):
     torch.cuda.set_device(device)
     print(f"Starting rank={rank}, seed={seed}, world_size={dist.get_world_size()}.")
 
+
     # Setup an experiment folder:
     if rank == 0:
         os.makedirs(args.results_dir, exist_ok=True)  # Make results folder (holds all experiment subfolders)
@@ -145,7 +148,9 @@ def main(args):
         logger.info(f"train_data_path : {args.train_data_path}")
         logger.info(f"gt_data_path : {args.gt_data_path}")
         logger.info(f"global-batch-size : {args.global_batch_size}")
+        logger.info(f"learning-rate : {args.learning_rate}")
         logger.info(f"epochs : {args.epochs}")
+
     else:
         logger = create_logger(None)
 
@@ -163,7 +168,7 @@ def main(args):
 
 
     # Setup optimizer (we used default Adam betas=(0.9, 0.999) and a constant learning rate of 1e-4 in our paper):
-    opt = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0)
+    opt = torch.optim.AdamW(model.parameters(), lr=args.learning_rate, weight_decay=0)
 
     if args.resume_from_checkpoint:
         assert os.path.isfile(args.resume_from_checkpoint), f'Could not find DiT checkpoint at {args.resume_from_checkpoint}'
@@ -236,14 +241,21 @@ def main(args):
     running_loss = 0
     start_time = time()
 
+    visual_num=10
+
     logger.info(f"Training for {args.epochs} epochs...")
+    min_loss=100
+    best_model_ckpt=None
     for epoch in range(args.epochs):
         sampler.set_epoch(epoch)
         logger.info(f"Beginning epoch {epoch}...")
+
+        per_epoch_running_loss=0.0
         for x, y in loader:
             # logger.info(f"train_steps {train_steps}")
             x = x.to(device)
             y = y.to(device)
+            source_img=x[:visual_num].cpu().clone()
             # with torch.no_grad():
             #     # Map input images to latent space + normalize latents:
             #     x = vae.encode(x).latent_dist.sample().mul_(0.18215)
@@ -271,6 +283,7 @@ def main(args):
 
             # Log loss values:
             running_loss += loss.item()
+            per_epoch_running_loss+=loss.item()
             log_steps += 1
             train_steps += 1
             # print("train_steps",train_steps)
@@ -289,6 +302,20 @@ def main(args):
                 log_steps = 0
                 start_time = time()
 
+                # print("loss_dict['model_output'].shape ",loss_dict['model_output'].shape)
+                # print("loss_dict['target'].shape ",loss_dict['target'].shape)
+
+            if train_steps % args.visual_every == 0:
+                with torch.no_grad():
+                    model_output_detach=vae.decode(loss_dict['model_output'][:visual_num]/ 0.18215).sample.to("cpu")
+                    target_detach=vae.decode(loss_dict['target'][:visual_num]/ 0.18215).sample.to("cpu")
+                    visual_img_tensor=torch.cat((source_img,model_output_detach,target_detach),0).to("cpu")
+                    # canvas=generate_img_canvas(model_output_detach,target_detach,args.image_size)
+                    
+                    save_image(visual_img_tensor, f"{experiment_dir}/sample-step={train_steps:07d}.png", nrow=visual_num, normalize=True, value_range=(-1, 1))
+                    # canvas_path=os.path.join(experiment_dir,"canvas-"+f"step={train_steps:07d}.png")
+                    # canvas.save(canvas_path)
+
             # Save DiT checkpoint:
             if train_steps % args.ckpt_every == 0 and train_steps > 0:
                 if rank == 0:
@@ -303,6 +330,18 @@ def main(args):
                     logger.info(f"Saved checkpoint to {checkpoint_path}")
                 dist.barrier()
 
+        epoch_loss=per_epoch_running_loss/len(loader)
+
+        if epoch_loss<min_loss:
+            min_loss=epoch_loss
+            best_model_ckpt= {
+                        "model": model.module.state_dict(),
+                        "ema": ema.state_dict(),
+                        "opt": opt.state_dict(),
+                        "args": args
+                    }
+
+
     # 训练结束后保存ckpt
     try:
         if rank == 0:
@@ -315,6 +354,10 @@ def main(args):
             checkpoint_path = f"{checkpoint_dir}/final.pt"
             torch.save(checkpoint, checkpoint_path)
             logger.info(f"Saved checkpoint to {checkpoint_path}")
+            if best_model_ckpt:
+                best_checkpoint_path = f"{checkpoint_dir}/best.pt"
+                torch.save(best_model_ckpt, best_checkpoint_path)
+                logger.info(f"Saved best checkpoint to {best_checkpoint_path}")
         dist.barrier()
     except Exception as e:
         print("训练结束后保存ckpt 失败",e)
@@ -323,6 +366,10 @@ def main(args):
     # do any sampling/FID calculation/etc. with ema (or model) in eval mode ...
 
     logger.info("Done!")
+
+    log_path=f"{experiment_dir}/log.txt"
+    visualize_log(log_path,experiment_dir)
+
     cleanup()
 
 
@@ -341,7 +388,9 @@ if __name__ == "__main__":
     parser.add_argument("--vae", type=str, choices=["ema", "mse"], default="ema")  # Choice doesn't affect training
     parser.add_argument("--num-workers", type=int, default=4)
     parser.add_argument("--log-every", type=int, default=100)
+    parser.add_argument("--visual-every", type=int, default=100)
     parser.add_argument("--ckpt-every", type=int, default=50_000)
     parser.add_argument("--resume-from-checkpoint", type=str, default=None) #加载ckpt文件
+    parser.add_argument("--learning-rate", type=float, default=1e-4) #加载ckpt文件
     args = parser.parse_args()
     main(args)

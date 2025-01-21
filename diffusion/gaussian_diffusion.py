@@ -459,7 +459,11 @@ class GaussianDiffusion:
             progress=progress,
         ):
             final = sample
-        return final["sample"]
+            yield final["pred_xstart"]
+            # yield final["sample"]
+        # 改成yield，方便可视化查错
+        # return final["sample"]
+    
 
     def p_sample_loop_progressive(
         self,
@@ -750,6 +754,10 @@ class GaussianDiffusion:
                 ModelVarType.LEARNED,
                 ModelVarType.LEARNED_RANGE,
             ]:
+                # print("self.model_var_type in [ \
+                # ModelVarType.LEARNED, \
+                # ModelVarType.LEARNED_RANGE, \
+                # ]:",self.model_var_type,self.loss_type)
                 B, C = x_t.shape[:2]
                 assert model_output.shape == (B, C * 2, *x_t.shape[2:])
                 model_output, model_var_values = th.split(model_output, C, dim=1)
@@ -781,6 +789,13 @@ class GaussianDiffusion:
                 terms["loss"] = terms["mse"] + terms["vb"]
             else:
                 terms["loss"] = terms["mse"]
+
+
+            # 返回模型输出和目标值，方便可视化排查错误
+            terms['model_output']=self._predict_xstart_from_eps(x_t=x_t, t=t, eps=model_output)
+            
+            terms['target']=x_start
+
         else:
             raise NotImplementedError(self.loss_type)
 

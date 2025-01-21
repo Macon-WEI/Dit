@@ -24,8 +24,8 @@ import torchvision.transforms as transforms
 
 sys.path.append(os.path.abspath("./train_options"))
 
-from models_inpaint import DiT_models
-from train_inpaint import center_crop_arr
+from train_options.models_inpaint import DiT_models
+from train_options.train_inpaint import center_crop_arr
 
 
 def save_gt_img(transform,result_dir,gt_prefix,sample_idx):
@@ -61,6 +61,13 @@ def save_train_img(transform,result_dir,train_prefix,sample_idx):
     # img_index = len(glob(f"{result_dir}/*"))
     img_name=f"source.png"
     save_image(y, os.path.join(result_dir,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+
+
+def mean_flat(tensor):
+    """
+    Take the mean over all non-batch dimensions.
+    """
+    return tensor.mean(dim=list(range(1, len(tensor.shape))))
 
 def main(args):
 
@@ -125,7 +132,7 @@ def main(args):
     # y3=y3.unsqueeze(0)
 
     # y=torch.cat((y0,y1,y2,y3),0).to(device)
-    sample_idx=[0,1,2,3]
+    sample_idx=[0,1,2,3,4,5,6,7,8,9]
     img_list=[]
     for i in sample_idx:
         yy=Image.open(train_prefix+f"{i}.jpg").convert("RGB")
@@ -167,28 +174,84 @@ def main(args):
     # model_kwargs = dict(y=y, cfg_scale=args.cfg_scale)
     model_kwargs = dict(y=y)
 
-    # Sample images:
-    samples = diffusion.p_sample_loop(
+    # # Sample images:
+    # samples = diffusion.p_sample_loop(
+    #     model.forward, z.shape, z, clip_denoised=False, model_kwargs=model_kwargs, progress=True, device=device
+    # )
+    # # samples, _ = samples.chunk(2, dim=0)  # Remove null class samples
+    # samples = vae.decode(samples / 0.18215).sample
+
+    gt_list=[]
+    for i in sample_idx:
+        yy=Image.open(gt_prefix+f"{i}.jpg").convert("RGB")
+        yy=transform(yy)
+        yy=yy.unsqueeze(0)
+        gt_list.append(yy)
+
+    ggtt=torch.cat(tuple(gt_list),0).to(device)
+
+
+    # sample_loss=mean_flat((ggtt - samples) ** 2)
+    # print(sample_loss.shape)
+    # print(sample_loss)
+
+        
+    if args.result_dir:
+        if not os.path.exists(args.result_dir):
+            os.makedirs(args.result_dir,exist_ok=True)
+        img_index = len(glob(f"{args.result_dir}/*"))
+        img_folder_path=os.path.join(args.result_dir,f"sample-inapint-{img_index:03d}")
+        
+        if not os.path.exists(img_folder_path):
+            os.makedirs(img_folder_path,exist_ok=True)
+        
+
+    sample_cnt=0
+    # 可视化
+    for sample in diffusion.p_sample_loop(
         model.forward, z.shape, z, clip_denoised=False, model_kwargs=model_kwargs, progress=True, device=device
-    )
-    # samples, _ = samples.chunk(2, dim=0)  # Remove null class samples
-    samples = vae.decode(samples / 0.18215).sample
+    ):
+        
+        # sample = vae.decode(sample / 0.18215).sample
+        # with torch.no_grad():
+        #     samples = vae.decode(samples / 0.18215).sample
+        #     canvas=generate_img_canvas(samples,args.image_size)
+        #     canvas_path=os.path.join("/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample_result/sample-visualize","canvas-"+f"{cnt:04d}.png")
+        #     canvas.save(canvas_path)
+        sample = vae.decode(sample / 0.18215).sample
+        if sample_cnt% args.sample_visual_every == 0:
+            visual_img_path=os.path.join(img_folder_path,"canvas-"+f"{sample_cnt:04d}.png")
+            save_image(sample, visual_img_path, nrow=4, normalize=True, value_range=(-1, 1))
+        sample_loss=mean_flat((ggtt - sample) ** 2)
+        with open(os.path.join(img_folder_path,"loss.txt"),"a") as f:
+            f.write(f"step-{sample_cnt}-loss : ")
+            for loss in sample_loss:
+                f.write(f"{loss:.6f} " )
+            f.write("\n")
+        sample_cnt+=1
+
 
     if args.result_dir=="":
         # Save and display images:
-        save_image(samples, "sample-inapint.png", nrow=4, normalize=True, value_range=(-1, 1))
+        # save_image(samples, "sample-inapint.png", nrow=4, normalize=True, value_range=(-1, 1))
+        pass
     else:
         if not os.path.exists(args.result_dir):
             os.makedirs(args.result_dir,exist_ok=True)
         img_index = len(glob(f"{args.result_dir}/*"))
         img_folder_path=os.path.join(args.result_dir,f"sample-inapint-{img_index:03d}")
+        
         # img_name=f"sample-inapint-{img_index:03d}.png"
         if not os.path.exists(img_folder_path):
             os.makedirs(img_folder_path,exist_ok=True)
         img_name=f"generated.png"
-        save_image(samples, os.path.join(img_folder_path,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+        # save_image(samples, os.path.join(img_folder_path,img_name), nrow=4, normalize=True, value_range=(-1, 1))
         save_gt_img(transform,img_folder_path,gt_prefix,sample_idx)
         save_train_img(transform,img_folder_path,train_prefix,sample_idx)
+        # with open(os.path.join(img_folder_path,"loss.txt"),"w") as f:
+        #     for loss in sample_loss:
+        #         f.write(f"loss : {loss:.6f} \n" )
+            
 
 
 
@@ -206,5 +269,6 @@ if __name__ == "__main__":
     parser.add_argument("--ckpt", type=str, default=None,
                         help="Optional path to a DiT checkpoint (default: auto-download a pre-trained DiT-XL/2 model).")
     parser.add_argument("--result-dir", type=str, default="")
+    parser.add_argument("--sample-visual-every", type=int, default=10)
     args = parser.parse_args()
     main(args)

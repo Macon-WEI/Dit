@@ -7,4 +7,5 @@ torchrun --nnodes=1 \
 --results-dir inpaint-train-results \
 --log-every 1 \
 --global-batch-size 10 \
---epochs 600
+--learning-rate 1e-4 \
+--epochs 2000
