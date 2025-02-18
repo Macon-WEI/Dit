@@ -37,7 +37,7 @@ from diffusion import create_diffusion
 from diffusers.models import AutoencoderKL
 from data.dataset import PairedImageDataset
 from visualize import visualize_log
-
+from diffusion.gaussian_diffusion import mean_flat
 
 #################################################################################
 #                             Training Helper Functions                         #
@@ -108,6 +108,43 @@ def center_crop_arr(pil_image, image_size):
     crop_y = (arr.shape[0] - image_size) // 2
     crop_x = (arr.shape[1] - image_size) // 2
     return Image.fromarray(arr[crop_y: crop_y + image_size, crop_x: crop_x + image_size])
+
+
+def save_gt_img(transform,result_dir,gt_prefix,sample_idx):
+    img_list=[]
+    for i in sample_idx:
+        yy=Image.open(gt_prefix+f"{i}.jpg").convert("RGB")
+        yy=transform(yy)
+        yy=yy.unsqueeze(0)
+        img_list.append(yy)
+
+    y=torch.cat(tuple(img_list),0)
+
+    
+    if not os.path.exists(result_dir):
+        os.makedirs(result_dir,exist_ok=True)
+    # img_index = len(glob(f"{result_dir}/*"))
+    img_name=f"gt.png"
+    save_image(y, os.path.join(result_dir,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+
+def save_train_img(transform,result_dir,train_prefix,sample_idx):
+    img_list=[]
+    for i in sample_idx:
+        yy=Image.open(train_prefix+f"{i}.jpg").convert("RGB")
+        yy=transform(yy)
+        yy=yy.unsqueeze(0)
+        img_list.append(yy)
+
+    y=torch.cat(tuple(img_list),0)
+
+    
+    if not os.path.exists(result_dir):
+        os.makedirs(result_dir,exist_ok=True)
+    # img_index = len(glob(f"{result_dir}/*"))
+    img_name=f"source.png"
+    save_image(y, os.path.join(result_dir,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+
+
 
 
 #################################################################################
@@ -185,7 +222,7 @@ def main(args):
 
     requires_grad(ema, False)
     model = DDP(model.to(device), device_ids=[rank])
-    diffusion = create_diffusion(timestep_respacing="")  # default: 1000 steps, linear noise schedule
+    diffusion = create_diffusion(timestep_respacing="",diffusion_steps=100)  # default: 1000 steps, linear noise schedule
     # vae = AutoencoderKL.from_pretrained(f"stabilityai/sd-vae-ft-{args.vae}").to(device)
     vae = AutoencoderKL.from_pretrained(f"./sd-vae-ft-mse").to(device)
     logger.info(f"DiT Parameters: {sum(p.numel() for p in model.parameters()):,}")
@@ -241,7 +278,7 @@ def main(args):
     running_loss = 0
     start_time = time()
 
-    visual_num=10
+    visual_num=min(10,int(args.global_batch_size // dist.get_world_size()))
 
     logger.info(f"Training for {args.epochs} epochs...")
     min_loss=100
@@ -309,7 +346,8 @@ def main(args):
                 with torch.no_grad():
                     model_output_detach=vae.decode(loss_dict['model_output'][:visual_num]/ 0.18215).sample.to("cpu")
                     target_detach=vae.decode(loss_dict['target'][:visual_num]/ 0.18215).sample.to("cpu")
-                    visual_img_tensor=torch.cat((source_img,model_output_detach,target_detach),0).to("cpu")
+                    pre_dict=vae.decode(loss_dict['pred_xstart'][:visual_num]/ 0.18215).sample.to("cpu")
+                    visual_img_tensor=torch.cat((source_img,model_output_detach,pre_dict,target_detach),0).to("cpu")
                     # canvas=generate_img_canvas(model_output_detach,target_detach,args.image_size)
                     
                     save_image(visual_img_tensor, f"{experiment_dir}/sample-step={train_steps:07d}.png", nrow=visual_num, normalize=True, value_range=(-1, 1))
@@ -364,11 +402,72 @@ def main(args):
 
     model.eval()  # important! This disables randomized embedding dropout
     # do any sampling/FID calculation/etc. with ema (or model) in eval mode ...
-
+    logger.info(f"min_loss is {min_loss}")
     logger.info("Done!")
 
     log_path=f"{experiment_dir}/log.txt"
     visualize_log(log_path,experiment_dir)
+
+
+    train_prefix="/home/tongji209/majiawei/Dit/dataset/train/source/eroded_"
+    gt_prefix="/home/tongji209/majiawei/Dit/dataset/train/target/target_"
+
+    sample_idx=[0]
+    img_list=[]
+    for i in sample_idx:
+        yy=Image.open(train_prefix+f"{i}.jpg").convert("RGB")
+        yy=transform(yy)
+        yy=yy.unsqueeze(0)
+        img_list.append(yy)
+
+    cond=torch.cat(tuple(img_list),0).to(device)
+
+
+    sample_num=cond.shape[0]
+
+    # Create sampling noise:
+    # n = len(class_labels)
+    z = torch.randn(sample_num, 4, latent_size, latent_size, device=device)
+    eval_model_kwargs = dict(y=cond)
+
+    gt_list=[]
+    for i in sample_idx:
+        yy=Image.open(gt_prefix+f"{i}.jpg").convert("RGB")
+        yy=transform(yy)
+        yy=yy.unsqueeze(0)
+        gt_list.append(yy)
+
+    ggtt=torch.cat(tuple(gt_list),0).to(device)
+
+    sample_cnt=0
+    # 可视化
+    for sample in diffusion.p_sample_loop(
+        model.forward, z.shape, z, clip_denoised=False, model_kwargs=model_kwargs, progress=True, device=device
+    ):
+        
+        # sample = vae.decode(sample / 0.18215).sample
+        # with torch.no_grad():
+        #     samples = vae.decode(samples / 0.18215).sample
+        #     canvas=generate_img_canvas(samples,args.image_size)
+        #     canvas_path=os.path.join("/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample_result/sample-visualize","canvas-"+f"{cnt:04d}.png")
+        #     canvas.save(canvas_path)
+        sample = vae.decode(sample / 0.18215).sample
+        if sample_cnt% args.sample_visual_every == 0:
+            visual_img_path=os.path.join(experiment_dir,"canvas-"+f"{sample_cnt:04d}.png")
+            save_image(sample, visual_img_path, nrow=4, normalize=True, value_range=(-1, 1))
+        sample_loss=mean_flat((ggtt - sample) ** 2)
+        with open(os.path.join(experiment_dir,"loss.txt"),"a") as f:
+            f.write(f"step-{sample_cnt}-loss : ")
+            for loss in sample_loss:
+                f.write(f"{loss:.6f} " )
+            f.write("\n")
+        sample_cnt+=1
+
+    img_name=f"generated.png"
+    save_image(sample, os.path.join(experiment_dir,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+    save_gt_img(transform,experiment_dir,gt_prefix,sample_idx)
+    save_train_img(transform,experiment_dir,train_prefix,sample_idx)
+    
 
     cleanup()
 
@@ -392,5 +491,6 @@ if __name__ == "__main__":
     parser.add_argument("--ckpt-every", type=int, default=50_000)
     parser.add_argument("--resume-from-checkpoint", type=str, default=None) #加载ckpt文件
     parser.add_argument("--learning-rate", type=float, default=1e-4) #加载ckpt文件
+    parser.add_argument("--sample-visual-every", type=int, default=10)
     args = parser.parse_args()
     main(args)

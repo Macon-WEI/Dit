@@ -792,8 +792,16 @@ class GaussianDiffusion:
 
 
             # 返回模型输出和目标值，方便可视化排查错误
-            terms['model_output']=self._predict_xstart_from_eps(x_t=x_t, t=t, eps=model_output)
-            
+            # terms['model_output']=self._predict_xstart_from_eps(x_t=x_t, t=t, eps=model_output)
+            p_sample_output=self.p_sample(model,
+                    x_t,
+                    t,
+                    clip_denoised=False,
+                    denoised_fn=None,
+                    cond_fn=None,
+                    model_kwargs=model_kwargs,)
+            terms['model_output']=p_sample_output["sample"]
+            terms['pred_xstart']=p_sample_output["pred_xstart"]
             terms['target']=x_start
 
         else:

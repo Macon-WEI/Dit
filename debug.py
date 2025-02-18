@@ -211,6 +211,16 @@ def main(args):
             os.makedirs(img_folder_path,exist_ok=True)
         
 
+    noise = torch.randn_like(ggtt_enc)
+    t = torch.randint(0, diffusion.num_timesteps, (ggtt_enc.shape[0],), device=device)
+    x_t = diffusion.q_sample(ggtt_enc, t, noise=noise)
+    print(mean_flat((ggtt_enc - x_t) ** 2))
+
+    x_t_dec=vae.decode(x_t / 0.18215).sample
+
+    save_image(x_t_dec, os.path.join(img_folder_path,"x_t_dec.png"), nrow=4, normalize=True, value_range=(-1, 1))
+
+    return 
     sample_cnt=0
     # 可视化
     for sample in diffusion.p_sample_loop(
@@ -269,7 +279,7 @@ def main(args):
             # os.makedirs(img_folder_path,exist_ok=True)
         
         img_name=f"generated.png"
-        save_image(sample, os.path.join(img_folder_path,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+        # save_image(sample, os.path.join(img_folder_path,img_name), nrow=4, normalize=True, value_range=(-1, 1))
         save_image(sample, os.path.join(img_folder_path,img_name), nrow=4, normalize=True, value_range=(-1, 1))
         save_gt_img(transform,img_folder_path,gt_prefix,sample_idx)
         save_train_img(transform,img_folder_path,train_prefix,sample_idx)
