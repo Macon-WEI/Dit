@@ -212,7 +212,8 @@ def main(args):
         
 
     noise = torch.randn_like(ggtt_enc)
-    t = torch.randint(0, diffusion.num_timesteps, (ggtt_enc.shape[0],), device=device)
+    # t = torch.randint(0, diffusion.num_timesteps, (ggtt_enc.shape[0],), device=device)
+    t=torch.full((ggtt_enc.shape[0],),diffusion.num_timesteps-1,device=device)
     x_t = diffusion.q_sample(ggtt_enc, t, noise=noise)
     print(mean_flat((ggtt_enc - x_t) ** 2))
 
