@@ -157,6 +157,8 @@ def main(args):
     # n = len(class_labels)
     z = torch.randn(sample_num, 4, latent_size, latent_size, device=device)
 
+    zz=vae.encode(y).latent_dist.sample().mul_(0.18215)
+
     # y = torch.tensor(class_labels, device=device)
 
 
@@ -195,7 +197,7 @@ def main(args):
 
     y_enc = vae.encode(y).latent_dist.sample().mul_(0.18215)
     ggtt_enc=vae.encode(ggtt).latent_dist.sample().mul_(0.18215)
-    print(mean_flat((ggtt_enc - y_enc) ** 2))
+    # print(mean_flat((ggtt_enc - y_enc) ** 2))
     # sample_loss=mean_flat((ggtt - samples) ** 2)
     # print(sample_loss.shape)
     # print(sample_loss)
@@ -215,17 +217,17 @@ def main(args):
     # t = torch.randint(0, diffusion.num_timesteps, (ggtt_enc.shape[0],), device=device)
     t=torch.full((ggtt_enc.shape[0],),diffusion.num_timesteps-1,device=device)
     x_t = diffusion.q_sample(ggtt_enc, t, noise=noise)
-    print(mean_flat((ggtt_enc - x_t) ** 2))
+    # print(mean_flat((ggtt_enc - x_t) ** 2))
 
     x_t_dec=vae.decode(x_t / 0.18215).sample
 
     save_image(x_t_dec, os.path.join(img_folder_path,"x_t_dec.png"), nrow=4, normalize=True, value_range=(-1, 1))
 
-    return 
+    # return 
     sample_cnt=0
     # 可视化
     for sample in diffusion.p_sample_loop(
-        model.forward, z.shape, z, clip_denoised=False, model_kwargs=model_kwargs, progress=True, device=device
+        model.forward, zz.shape, zz, clip_denoised=False, model_kwargs=model_kwargs, progress=True, device=device
     ):
         
         # sample = vae.decode(sample / 0.18215).sample

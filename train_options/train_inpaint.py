@@ -171,6 +171,8 @@ def main(args):
     torch.cuda.set_device(device)
     print(f"Starting rank={rank}, seed={seed}, world_size={dist.get_world_size()}.")
 
+    print("device",type(device),device)
+    # return
 
     # Setup an experiment folder:
     if rank == 0:
@@ -187,6 +189,8 @@ def main(args):
         logger.info(f"global-batch-size : {args.global_batch_size}")
         logger.info(f"learning-rate : {args.learning_rate}")
         logger.info(f"epochs : {args.epochs}")
+        logger.info(f"diffusion_steps : {args.diffusion_steps}")
+        logger.info(f"predict_xstart : {args.predict_xstart}")
 
     else:
         logger = create_logger(None)
@@ -221,8 +225,9 @@ def main(args):
     # print(f"Memory Reserved: {torch.cuda.memory_reserved(device) / 1024**3:.2f} GB")
 
     requires_grad(ema, False)
-    model = DDP(model.to(device), device_ids=[rank])
-    diffusion = create_diffusion(timestep_respacing="",diffusion_steps=100)  # default: 1000 steps, linear noise schedule
+    model = DDP(model.to(device), device_ids=[rank],find_unused_parameters=True)
+
+    diffusion = create_diffusion(timestep_respacing="",diffusion_steps=args.diffusion_steps,predict_xstart=args.predict_xstart)  # default: 1000 steps, linear noise schedule
     # vae = AutoencoderKL.from_pretrained(f"stabilityai/sd-vae-ft-{args.vae}").to(device)
     vae = AutoencoderKL.from_pretrained(f"./sd-vae-ft-mse").to(device)
     logger.info(f"DiT Parameters: {sum(p.numel() for p in model.parameters()):,}")
@@ -305,10 +310,15 @@ def main(args):
                 # Map input images to latent space + normalize latents:
                 y = vae.encode(y).latent_dist.sample().mul_(0.18215)
 
-            t = torch.randint(0, diffusion.num_timesteps, (y.shape[0],), device=device)
+                # x_enc = vae.encode(x).latent_dist.sample().mul_(0.18215)
+
+
+            # t = torch.randint(0, diffusion.num_timesteps, (y.shape[0],), device=device)     # 改成100，
+            t = torch.randint(diffusion.num_timesteps-1, diffusion.num_timesteps, (y.shape[0],), device=device)     # 改成100，
+            # t=torch.full(y.shape[0],99,device=device)
             model_kwargs = dict(y=x)
             loss_dict = diffusion.training_losses(model, y, t, model_kwargs)
-
+            # loss_dict = diffusion.training_losses(model, x_enc, t, model_kwargs,clean_target=y)
 
 
 
@@ -344,10 +354,11 @@ def main(args):
 
             if train_steps % args.visual_every == 0:
                 with torch.no_grad():
+                    x_t_detach=vae.decode(loss_dict['x_t'][:visual_num]/ 0.18215).sample.to("cpu")
                     model_output_detach=vae.decode(loss_dict['model_output'][:visual_num]/ 0.18215).sample.to("cpu")
                     target_detach=vae.decode(loss_dict['target'][:visual_num]/ 0.18215).sample.to("cpu")
                     pre_dict=vae.decode(loss_dict['pred_xstart'][:visual_num]/ 0.18215).sample.to("cpu")
-                    visual_img_tensor=torch.cat((source_img,model_output_detach,pre_dict,target_detach),0).to("cpu")
+                    visual_img_tensor=torch.cat((source_img,x_t_detach,model_output_detach,pre_dict,target_detach),0).to("cpu")
                     # canvas=generate_img_canvas(model_output_detach,target_detach,args.image_size)
                     
                     save_image(visual_img_tensor, f"{experiment_dir}/sample-step={train_steps:07d}.png", nrow=visual_num, normalize=True, value_range=(-1, 1))
@@ -414,6 +425,9 @@ def main(args):
 
     sample_idx=[0]
     img_list=[]
+
+    
+
     for i in sample_idx:
         yy=Image.open(train_prefix+f"{i}.jpg").convert("RGB")
         yy=transform(yy)
@@ -427,7 +441,9 @@ def main(args):
 
     # Create sampling noise:
     # n = len(class_labels)
-    z = torch.randn(sample_num, 4, latent_size, latent_size, device=device)
+    # z = torch.randn(sample_num, 4, latent_size, latent_size, device=device)
+    z=vae.encode(cond).latent_dist.sample().mul_(0.18215)
+
     eval_model_kwargs = dict(y=cond)
 
     gt_list=[]
@@ -454,7 +470,8 @@ def main(args):
         sample = vae.decode(sample / 0.18215).sample
         if sample_cnt% args.sample_visual_every == 0:
             visual_img_path=os.path.join(experiment_dir,"canvas-"+f"{sample_cnt:04d}.png")
-            save_image(sample, visual_img_path, nrow=4, normalize=True, value_range=(-1, 1))
+            sample_compare=torch.cat((sample,ggtt),0).to(device)
+            save_image(sample_compare, visual_img_path, nrow=4, normalize=True, value_range=(-1, 1))
         sample_loss=mean_flat((ggtt - sample) ** 2)
         with open(os.path.join(experiment_dir,"loss.txt"),"a") as f:
             f.write(f"step-{sample_cnt}-loss : ")
@@ -487,10 +504,12 @@ if __name__ == "__main__":
     parser.add_argument("--vae", type=str, choices=["ema", "mse"], default="ema")  # Choice doesn't affect training
     parser.add_argument("--num-workers", type=int, default=4)
     parser.add_argument("--log-every", type=int, default=100)
-    parser.add_argument("--visual-every", type=int, default=100)
+    parser.add_argument("--visual-every", type=int, default=10)
     parser.add_argument("--ckpt-every", type=int, default=50_000)
     parser.add_argument("--resume-from-checkpoint", type=str, default=None) #加载ckpt文件
-    parser.add_argument("--learning-rate", type=float, default=1e-4) #加载ckpt文件
+    parser.add_argument("--learning-rate", type=float, default=1e-4) 
     parser.add_argument("--sample-visual-every", type=int, default=10)
+    parser.add_argument("--predict-xstart", action='store_true', help="use predict xstart in diffusion training")
+    parser.add_argument("--diffusion-steps", type=int, default=1000)
     args = parser.parse_args()
     main(args)

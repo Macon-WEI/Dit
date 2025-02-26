@@ -97,7 +97,9 @@ def main(args):
     state_dict = find_model(ckpt_path)
     model.load_state_dict(state_dict)
     model.eval()  # important!
-    diffusion = create_diffusion(str(args.num_sampling_steps))
+    # diffusion = create_diffusion(str(args.num_sampling_steps))
+    diffusion = create_diffusion(timestep_respacing="",diffusion_steps=args.diffusion_steps,predict_xstart=args.predict_xstart)
+    
     # vae = AutoencoderKL.from_pretrained(f"stabilityai/sd-vae-ft-{args.vae}").to(device)
     vae = AutoencoderKL.from_pretrained(f"./sd-vae-ft-mse").to(device)
 
@@ -156,6 +158,7 @@ def main(args):
     # Create sampling noise:
     # n = len(class_labels)
     z = torch.randn(sample_num, 4, latent_size, latent_size, device=device)
+    # z=vae.encode(y).latent_dist.sample().mul_(0.18215)
 
     # y = torch.tensor(class_labels, device=device)
 
@@ -195,7 +198,7 @@ def main(args):
 
     y_enc = vae.encode(y).latent_dist.sample().mul_(0.18215)
     ggtt_enc=vae.encode(ggtt).latent_dist.sample().mul_(0.18215)
-    print(mean_flat((ggtt_enc - y_enc) ** 2))
+    # print(mean_flat((ggtt_enc - y_enc) ** 2))
     # sample_loss=mean_flat((ggtt - samples) ** 2)
     # print(sample_loss.shape)
     # print(sample_loss)
@@ -227,7 +230,8 @@ def main(args):
         sample = vae.decode(sample / 0.18215).sample
         if sample_cnt% args.sample_visual_every == 0:
             visual_img_path=os.path.join(img_folder_path,"canvas-"+f"{sample_cnt:04d}.png")
-            save_image(sample, visual_img_path, nrow=4, normalize=True, value_range=(-1, 1))
+            sample_compare=torch.cat((sample,ggtt),0).to(device)
+            save_image(sample_compare, visual_img_path, nrow=4, normalize=True, value_range=(-1, 1))
         
         with open(os.path.join(img_folder_path,"loss.txt"),"a") as f:
             f.write(f"step-{sample_cnt}-loss : ")
@@ -295,5 +299,7 @@ if __name__ == "__main__":
                         help="Optional path to a DiT checkpoint (default: auto-download a pre-trained DiT-XL/2 model).")
     parser.add_argument("--result-dir", type=str, default="")
     parser.add_argument("--sample-visual-every", type=int, default=10)
+    parser.add_argument("--predict-xstart", action='store_true', help="use predict xstart in diffusion training")
+    parser.add_argument("--diffusion-steps", type=int, default=1000)
     args = parser.parse_args()
     main(args)

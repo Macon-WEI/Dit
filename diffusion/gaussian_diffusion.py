@@ -110,7 +110,8 @@ def get_named_beta_schedule(schedule_name, num_diffusion_timesteps):
         return get_beta_schedule(
             "linear",
             beta_start=scale * 0.0001,
-            beta_end=scale * 0.02,
+            # beta_end=scale * 0.02,
+            beta_end=scale * 0.0001,
             num_diffusion_timesteps=num_diffusion_timesteps,
         )
     elif schedule_name == "squaredcos_cap_v2":
@@ -498,7 +499,7 @@ class GaussianDiffusion:
             from tqdm.auto import tqdm
 
             indices = tqdm(indices)
-
+            
         for i in indices:
             t = th.tensor([i] * shape[0], device=device)
             with th.no_grad():
@@ -716,7 +717,7 @@ class GaussianDiffusion:
         output = th.where((t == 0), decoder_nll, kl)
         return {"output": output, "pred_xstart": out["pred_xstart"]}
 
-    def training_losses(self, model, x_start, t, model_kwargs=None, noise=None):
+    def training_losses(self, model, x_start, t, model_kwargs=None, noise=None, clean_target=None):
         """
         Compute training losses for a single timestep.
         :param model: the model to evaluate loss on.
@@ -747,13 +748,13 @@ class GaussianDiffusion:
             )["output"]
             if self.loss_type == LossType.RESCALED_KL:
                 terms["loss"] *= self.num_timesteps
-        elif self.loss_type == LossType.MSE or self.loss_type == LossType.RESCALED_MSE:
+        elif self.loss_type == LossType.MSE or self.loss_type == LossType.RESCALED_MSE:     #self.loss_type 是 LossType.MSE
             model_output = model(x_t, t, **model_kwargs)
 
             if self.model_var_type in [
                 ModelVarType.LEARNED,
                 ModelVarType.LEARNED_RANGE,
-            ]:
+            ]:      #self.model_var_type是ModelVarType.LEARNED_RANGE
                 # print("self.model_var_type in [ \
                 # ModelVarType.LEARNED, \
                 # ModelVarType.LEARNED_RANGE, \
@@ -776,16 +777,18 @@ class GaussianDiffusion:
                     # Without a factor of 1/1000, the VB term hurts the MSE term.
                     terms["vb"] *= self.num_timesteps / 1000.0
 
-            target = {
+            target = {          # modelMeanType是ModelMeanType.EPSILON
                 ModelMeanType.PREVIOUS_X: self.q_posterior_mean_variance(
                     x_start=x_start, x_t=x_t, t=t
                 )[0],
-                ModelMeanType.START_X: x_start,
+                ModelMeanType.START_X: x_start if clean_target==None else clean_target,
                 ModelMeanType.EPSILON: noise,
             }[self.model_mean_type]
             assert model_output.shape == target.shape == x_start.shape
             terms["mse"] = mean_flat((target - model_output) ** 2)
             if "vb" in terms:
+                print("terms[\"mse\"]",terms["mse"])
+                print("terms[\"vb\"]",terms["vb"])
                 terms["loss"] = terms["mse"] + terms["vb"]
             else:
                 terms["loss"] = terms["mse"]
@@ -802,7 +805,8 @@ class GaussianDiffusion:
                     model_kwargs=model_kwargs,)
             terms['model_output']=p_sample_output["sample"]
             terms['pred_xstart']=p_sample_output["pred_xstart"]
-            terms['target']=x_start
+            terms['target']=x_start if clean_target==None else clean_target
+            terms['x_t']=x_t
 
         else:
             raise NotImplementedError(self.loss_type)

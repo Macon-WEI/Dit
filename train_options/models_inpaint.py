@@ -271,6 +271,8 @@ class DiT(nn.Module):
 
         # Initialize label embedding table:
         # nn.init.normal_(self.y_embedder.embedding_table.weight, std=0.02)
+
+
         self.y_embedder.initialize_weights()
 
         # Initialize timestep embedding MLP:
@@ -313,7 +315,9 @@ class DiT(nn.Module):
         x = self.x_embedder(x) + self.pos_embed  # (N, T, D), where T = H * W / patch_size ** 2
         t = self.t_embedder(t)                   # (N, D)
         # y = self.y_embedder(y, self.training)    # (N, D)
+
         y = self.y_embedder(y)    # (N, D)
+        # y=torch.full(t.shape,0,device=x.device)
 
         c = t + y                                # (N, D)
         for block in self.blocks:

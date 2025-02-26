@@ -26,11 +26,21 @@ def create_diffusion(
         loss_type = gd.LossType.MSE
     if timestep_respacing is None or timestep_respacing == "":
         timestep_respacing = [diffusion_steps]
-    print("this is in create_diffusion")
-    print("timestep_respacing",len(timestep_respacing),timestep_respacing)
-    print(timestep_respacing)
-    print("space_timesteps(diffusion_steps, timestep_respacing),")
-    print(space_timesteps(diffusion_steps, timestep_respacing),)
+    # print("this is in create_diffusion")
+    # print("timestep_respacing",len(timestep_respacing),timestep_respacing)
+    print("loss_type",loss_type)
+    print("model_var_type",(
+            (
+                gd.ModelVarType.FIXED_LARGE
+                if not sigma_small
+                else gd.ModelVarType.FIXED_SMALL
+            )
+            if not learn_sigma
+            else gd.ModelVarType.LEARNED_RANGE
+        ))
+    print("model_mean_type",gd.ModelMeanType.EPSILON if not predict_xstart else gd.ModelMeanType.START_X)
+    # print("space_timesteps(diffusion_steps, timestep_respacing),")
+    # print(space_timesteps(diffusion_steps, timestep_respacing),)
     return SpacedDiffusion(
         use_timesteps=space_timesteps(diffusion_steps, timestep_respacing),
         betas=betas,

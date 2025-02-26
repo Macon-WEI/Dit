@@ -24,9 +24,9 @@ def find_model(model_name):
     else:  # Load a custom DiT checkpoint:
         assert os.path.isfile(model_name), f'Could not find DiT checkpoint at {model_name}'
         checkpoint = torch.load(model_name, map_location=lambda storage, loc: storage)
-        if "ema" in checkpoint:  # supports checkpoints from train.py
-            checkpoint = checkpoint["ema"]
-        # checkpoint=checkpoint["model"]
+        # if "ema" in checkpoint:  # supports checkpoints from train.py
+        #     checkpoint = checkpoint["ema"]
+        checkpoint=checkpoint["model"]
         return checkpoint
 
 
