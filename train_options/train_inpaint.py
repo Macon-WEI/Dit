@@ -225,7 +225,7 @@ def main(args):
     # print(f"Memory Reserved: {torch.cuda.memory_reserved(device) / 1024**3:.2f} GB")
 
     requires_grad(ema, False)
-    model = DDP(model.to(device), device_ids=[rank],find_unused_parameters=True)
+    model = DDP(model.to(device), device_ids=[rank])
 
     diffusion = create_diffusion(timestep_respacing="",diffusion_steps=args.diffusion_steps,predict_xstart=args.predict_xstart)  # default: 1000 steps, linear noise schedule
     # vae = AutoencoderKL.from_pretrained(f"stabilityai/sd-vae-ft-{args.vae}").to(device)
@@ -310,15 +310,15 @@ def main(args):
                 # Map input images to latent space + normalize latents:
                 y = vae.encode(y).latent_dist.sample().mul_(0.18215)
 
-                # x_enc = vae.encode(x).latent_dist.sample().mul_(0.18215)
+                x_enc = vae.encode(x).latent_dist.sample().mul_(0.18215)
 
 
-            # t = torch.randint(0, diffusion.num_timesteps, (y.shape[0],), device=device)     # 改成100，
-            t = torch.randint(diffusion.num_timesteps-1, diffusion.num_timesteps, (y.shape[0],), device=device)     # 改成100，
+            t = torch.randint(0, diffusion.num_timesteps, (y.shape[0],), device=device)     # 改成100，
+            # t = torch.randint(diffusion.num_timesteps-1, diffusion.num_timesteps, (y.shape[0],), device=device)     # 改成100，
             # t=torch.full(y.shape[0],99,device=device)
             model_kwargs = dict(y=x)
-            loss_dict = diffusion.training_losses(model, y, t, model_kwargs)
-            # loss_dict = diffusion.training_losses(model, x_enc, t, model_kwargs,clean_target=y)
+            # loss_dict = diffusion.training_losses(model, y, t, model_kwargs)
+            loss_dict = diffusion.training_losses(model, x_enc, t, model_kwargs,clean_target=y)
 
 
 
@@ -344,6 +344,8 @@ def main(args):
                 dist.all_reduce(avg_loss, op=dist.ReduceOp.SUM)
                 avg_loss = avg_loss.item() / dist.get_world_size()
                 logger.info(f"(step={train_steps:07d}) Train Loss: {avg_loss:.4f}, Train Steps/Sec: {steps_per_sec:.2f}")
+                logger.info(f"terms[\"mse\"]:{loss_dict['mse'].mean().item()}")
+                logger.info(f"terms[\"vb\"]:{loss_dict['vb'].mean().item()}")
                 # Reset monitoring variables:
                 running_loss = 0
                 log_steps = 0
@@ -352,7 +354,7 @@ def main(args):
                 # print("loss_dict['model_output'].shape ",loss_dict['model_output'].shape)
                 # print("loss_dict['target'].shape ",loss_dict['target'].shape)
 
-            if train_steps % args.visual_every == 0:
+            if train_steps % args.visual_every == 0 and rank==0:
                 with torch.no_grad():
                     x_t_detach=vae.decode(loss_dict['x_t'][:visual_num]/ 0.18215).sample.to("cpu")
                     model_output_detach=vae.decode(loss_dict['model_output'][:visual_num]/ 0.18215).sample.to("cpu")
@@ -417,73 +419,80 @@ def main(args):
     logger.info("Done!")
 
     log_path=f"{experiment_dir}/log.txt"
-    visualize_log(log_path,experiment_dir)
+
+    if rank==0:
+        visualize_log(log_path,experiment_dir)
 
 
-    train_prefix="/home/tongji209/majiawei/Dit/dataset/train/source/eroded_"
-    gt_prefix="/home/tongji209/majiawei/Dit/dataset/train/target/target_"
+        train_prefix="/remote-home/zhangxinyue/DiT/train/source/eroded_"
+        gt_prefix="/remote-home/zhangxinyue/DiT/train/target/target_"
 
-    sample_idx=[0]
-    img_list=[]
-
-    
-
-    for i in sample_idx:
-        yy=Image.open(train_prefix+f"{i}.jpg").convert("RGB")
-        yy=transform(yy)
-        yy=yy.unsqueeze(0)
-        img_list.append(yy)
-
-    cond=torch.cat(tuple(img_list),0).to(device)
+        # sample_idx=[0]
+        sample_idx=list(range(10))
 
 
-    sample_num=cond.shape[0]
+        img_list=[]
 
-    # Create sampling noise:
-    # n = len(class_labels)
-    # z = torch.randn(sample_num, 4, latent_size, latent_size, device=device)
-    z=vae.encode(cond).latent_dist.sample().mul_(0.18215)
-
-    eval_model_kwargs = dict(y=cond)
-
-    gt_list=[]
-    for i in sample_idx:
-        yy=Image.open(gt_prefix+f"{i}.jpg").convert("RGB")
-        yy=transform(yy)
-        yy=yy.unsqueeze(0)
-        gt_list.append(yy)
-
-    ggtt=torch.cat(tuple(gt_list),0).to(device)
-
-    sample_cnt=0
-    # 可视化
-    for sample in diffusion.p_sample_loop(
-        model.forward, z.shape, z, clip_denoised=False, model_kwargs=model_kwargs, progress=True, device=device
-    ):
         
-        # sample = vae.decode(sample / 0.18215).sample
-        # with torch.no_grad():
-        #     samples = vae.decode(samples / 0.18215).sample
-        #     canvas=generate_img_canvas(samples,args.image_size)
-        #     canvas_path=os.path.join("/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample_result/sample-visualize","canvas-"+f"{cnt:04d}.png")
-        #     canvas.save(canvas_path)
-        sample = vae.decode(sample / 0.18215).sample
-        if sample_cnt% args.sample_visual_every == 0:
-            visual_img_path=os.path.join(experiment_dir,"canvas-"+f"{sample_cnt:04d}.png")
-            sample_compare=torch.cat((sample,ggtt),0).to(device)
-            save_image(sample_compare, visual_img_path, nrow=4, normalize=True, value_range=(-1, 1))
-        sample_loss=mean_flat((ggtt - sample) ** 2)
-        with open(os.path.join(experiment_dir,"loss.txt"),"a") as f:
-            f.write(f"step-{sample_cnt}-loss : ")
-            for loss in sample_loss:
-                f.write(f"{loss:.6f} " )
-            f.write("\n")
-        sample_cnt+=1
 
-    img_name=f"generated.png"
-    save_image(sample, os.path.join(experiment_dir,img_name), nrow=4, normalize=True, value_range=(-1, 1))
-    save_gt_img(transform,experiment_dir,gt_prefix,sample_idx)
-    save_train_img(transform,experiment_dir,train_prefix,sample_idx)
+        for i in sample_idx:
+            yy=Image.open(train_prefix+f"{i}.jpg").convert("RGB")
+            yy=transform(yy)
+            yy=yy.unsqueeze(0)
+            img_list.append(yy)
+
+        cond=torch.cat(tuple(img_list),0).to(device)
+
+
+        sample_num=cond.shape[0]
+
+        # Create sampling noise:
+        # n = len(class_labels)
+        zz = torch.randn(sample_num, 4, latent_size, latent_size, device=device)
+        zzz=vae.encode(cond).latent_dist.sample().mul_(0.18215)
+
+        z=torch.cat((zz,zzz),0)
+
+        eval_model_kwargs = dict(y=torch.cat((cond,cond),0))
+
+        gt_list=[]
+        for i in sample_idx:
+            yy=Image.open(gt_prefix+f"{i}.jpg").convert("RGB")
+            yy=transform(yy)
+            yy=yy.unsqueeze(0)
+            gt_list.append(yy)
+
+        ggtt=torch.cat(tuple(gt_list),0).to(device)
+
+        sample_cnt=0
+        # 可视化
+        for sample in diffusion.p_sample_loop(
+            model.forward, z.shape, z, clip_denoised=False, model_kwargs=model_kwargs, progress=True, device=device
+        ):
+            
+            # sample = vae.decode(sample / 0.18215).sample
+            # with torch.no_grad():
+            #     samples = vae.decode(samples / 0.18215).sample
+            #     canvas=generate_img_canvas(samples,args.image_size)
+            #     canvas_path=os.path.join("/public/home/acr0vd9ik6/project/DiT/fast-DiT/sample_result/sample-visualize","canvas-"+f"{cnt:04d}.png")
+            #     canvas.save(canvas_path)
+            sample = vae.decode(sample / 0.18215).sample
+            if sample_cnt% args.sample_visual_every == 0:
+                visual_img_path=os.path.join(experiment_dir,"canvas-"+f"{sample_cnt:04d}.png")
+                sample_compare=torch.cat((sample,ggtt),0).to(device)
+                save_image(sample_compare, visual_img_path, nrow=4, normalize=True, value_range=(-1, 1))
+            sample_loss=mean_flat((ggtt - sample) ** 2)
+            with open(os.path.join(experiment_dir,"loss.txt"),"a") as f:
+                f.write(f"step-{sample_cnt}-loss : ")
+                for loss in sample_loss:
+                    f.write(f"{loss:.6f} " )
+                f.write("\n")
+            sample_cnt+=1
+
+        img_name=f"generated.png"
+        save_image(sample, os.path.join(experiment_dir,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+        save_gt_img(transform,experiment_dir,gt_prefix,sample_idx)
+        save_train_img(transform,experiment_dir,train_prefix,sample_idx)
     
 
     cleanup()
@@ -504,7 +513,7 @@ if __name__ == "__main__":
     parser.add_argument("--vae", type=str, choices=["ema", "mse"], default="ema")  # Choice doesn't affect training
     parser.add_argument("--num-workers", type=int, default=4)
     parser.add_argument("--log-every", type=int, default=100)
-    parser.add_argument("--visual-every", type=int, default=10)
+    parser.add_argument("--visual-every", type=int, default=100)
     parser.add_argument("--ckpt-every", type=int, default=50_000)
     parser.add_argument("--resume-from-checkpoint", type=str, default=None) #加载ckpt文件
     parser.add_argument("--learning-rate", type=float, default=1e-4) 

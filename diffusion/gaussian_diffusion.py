@@ -111,7 +111,7 @@ def get_named_beta_schedule(schedule_name, num_diffusion_timesteps):
             "linear",
             beta_start=scale * 0.0001,
             # beta_end=scale * 0.02,
-            beta_end=scale * 0.0001,
+            beta_end=scale * 0.002,
             num_diffusion_timesteps=num_diffusion_timesteps,
         )
     elif schedule_name == "squaredcos_cap_v2":
@@ -787,8 +787,8 @@ class GaussianDiffusion:
             assert model_output.shape == target.shape == x_start.shape
             terms["mse"] = mean_flat((target - model_output) ** 2)
             if "vb" in terms:
-                print("terms[\"mse\"]",terms["mse"])
-                print("terms[\"vb\"]",terms["vb"])
+                # print("terms[\"mse\"]",terms["mse"].mean().item())
+                # print("terms[\"vb\"]",terms["vb"].mean().item())
                 terms["loss"] = terms["mse"] + terms["vb"]
             else:
                 terms["loss"] = terms["mse"]

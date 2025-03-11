@@ -1,7 +1,8 @@
-python3 debug.py --model DiT-L/4 \
+python3 debug.py --model DiT-S/4 \
 --image-size 256 \
---result-dir ./sample-inpaint-results \
+--result-dir ./debug \
 --seed 0 \
 --num-sampling-steps 1000 \
 --sample-visual-every 10 \
---ckpt /home/tongji209/majiawei/Dit/Dit/inpaint-train-results/016-DiT-L-4/checkpoints/best.pt
+--diffusion-steps 100 \
+--ckpt /remote-home/zhangxinyue/DiT/Dit/inpaint-train-results/008-DiT-S-4/checkpoints/final.pt
