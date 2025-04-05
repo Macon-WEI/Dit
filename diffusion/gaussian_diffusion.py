@@ -460,7 +460,8 @@ class GaussianDiffusion:
             progress=progress,
         ):
             final = sample
-            yield final["pred_xstart"]
+            return final["pred_xstart"]
+            # yield final["pred_xstart"]
             # yield final["sample"]
         # 改成yield，方便可视化查错
         # return final["sample"]

@@ -116,11 +116,11 @@ def main(args):
     # train_prefix="/remote-home/zhangxinyue/DiT/train/source/eroded_"
     # gt_prefix="/remote-home/zhangxinyue/DiT/train/target/target_"
 
-    train_prefix="/remote-home/zhangxinyue/DiT/test/task1/eroded/test1_"
-    gt_prefix="/remote-home/zhangxinyue/DiT/test/task1/target/target1_"
+    # train_prefix="/remote-home/zhangxinyue/DiT/test/task1/eroded/test1_"
+    # gt_prefix="/remote-home/zhangxinyue/DiT/test/task1/target/target1_"
 
-    # train_prefix="/home/tongji209/majiawei/Dit/dataset/train/target/target_"
-    # gt_prefix="/home/tongji209/majiawei/Dit/dataset/train/source/eroded_"
+    gt_prefix="/home/tongji209/majiawei/Dit/dataset/train/target/target_"
+    train_prefix="/home/tongji209/majiawei/Dit/dataset/train/source/eroded_"
 
     # y0=Image.open("/home/tongji209/majiawei/Dit/dataset/train/source/eroded_0.jpg").convert("RGB")
     # y0=transform(y0)
@@ -284,7 +284,7 @@ def main(args):
             # os.makedirs(img_folder_path,exist_ok=True)
         
         img_name=f"generated.png"
-        save_image(sample, os.path.join(img_folder_path,img_name), nrow=4, normalize=True, value_range=(-1, 1))
+        # save_image(sample, os.path.join(img_folder_path,img_name), nrow=4, normalize=True, value_range=(-1, 1))
         save_image(sample, os.path.join(img_folder_path,img_name), nrow=4, normalize=True, value_range=(-1, 1))
         save_gt_img(transform,img_folder_path,gt_prefix,sample_idx)
         save_train_img(transform,img_folder_path,train_prefix,sample_idx)

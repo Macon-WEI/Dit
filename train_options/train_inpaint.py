@@ -288,6 +288,7 @@ def main(args):
     logger.info(f"Training for {args.epochs} epochs...")
     min_loss=100
     best_model_ckpt=None
+    print("len(loader)",len(loader))
     for epoch in range(args.epochs):
         sampler.set_epoch(epoch)
         logger.info(f"Beginning epoch {epoch}...")
@@ -424,8 +425,8 @@ def main(args):
         visualize_log(log_path,experiment_dir)
 
 
-        train_prefix="/remote-home/zhangxinyue/DiT/train/source/eroded_"
-        gt_prefix="/remote-home/zhangxinyue/DiT/train/target/target_"
+        train_prefix="/home/tongji209/majiawei/Dit/dataset/train/source/eroded_"
+        gt_prefix="/home/tongji209/majiawei/Dit/dataset/train/target/target_"
 
         # sample_idx=[0]
         sample_idx=list(range(10))
@@ -481,12 +482,12 @@ def main(args):
                 visual_img_path=os.path.join(experiment_dir,"canvas-"+f"{sample_cnt:04d}.png")
                 sample_compare=torch.cat((sample,ggtt),0).to(device)
                 save_image(sample_compare, visual_img_path, nrow=4, normalize=True, value_range=(-1, 1))
-            sample_loss=mean_flat((ggtt - sample) ** 2)
-            with open(os.path.join(experiment_dir,"loss.txt"),"a") as f:
-                f.write(f"step-{sample_cnt}-loss : ")
-                for loss in sample_loss:
-                    f.write(f"{loss:.6f} " )
-                f.write("\n")
+            # sample_loss=mean_flat((ggtt - sample) ** 2)
+            # with open(os.path.join(experiment_dir,"loss.txt"),"a") as f:
+            #     f.write(f"step-{sample_cnt}-loss : ")
+            #     for loss in sample_loss:
+            #         f.write(f"{loss:.6f} " )
+            #     f.write("\n")
             sample_cnt+=1
 
         img_name=f"generated.png"
