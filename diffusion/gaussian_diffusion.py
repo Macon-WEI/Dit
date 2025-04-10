@@ -428,6 +428,7 @@ class GaussianDiffusion:
         model_kwargs=None,
         device=None,
         progress=False,
+        predict_xstart=None,
     ):
         """
         Generate samples from the model.
@@ -460,9 +461,11 @@ class GaussianDiffusion:
             progress=progress,
         ):
             final = sample
-            return final["pred_xstart"]
-            # yield final["pred_xstart"]
-            # yield final["sample"]
+            # return final["pred_xstart"]
+            if predict_xstart:
+                yield final["pred_xstart"]
+            else:
+                yield final["sample"]
         # 改成yield，方便可视化查错
         # return final["sample"]
     
@@ -790,7 +793,8 @@ class GaussianDiffusion:
             if "vb" in terms:
                 # print("terms[\"mse\"]",terms["mse"].mean().item())
                 # print("terms[\"vb\"]",terms["vb"].mean().item())
-                terms["loss"] = terms["mse"] + terms["vb"]
+                terms["loss"] = terms["mse"]   
+                # terms["loss"] = terms["mse"] + terms["vb"]  # 缩放因子是否调整？
             else:
                 terms["loss"] = terms["mse"]
 
@@ -895,6 +899,12 @@ def _extract_into_tensor(arr, timesteps, broadcast_shape):
                             dimension equal to the length of timesteps.
     :return: a tensor of shape [batch_size, 1, ...] where the shape has K dims.
     """
+
+    # print("arr shape:", arr.shape)  # 应为 [num_timesteps, ...]
+    # print("timesteps device:", timesteps.device)
+    # timesteps_cpu = timesteps.cpu()
+    # print("timesteps min/max:", timesteps_cpu.min().item(), timesteps_cpu.max().item())
+    
     res = th.from_numpy(arr).to(device=timesteps.device)[timesteps].float()
     while len(res.shape) < len(broadcast_shape):
         res = res[..., None]

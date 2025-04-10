@@ -1,12 +1,12 @@
-name: DiT
+name: stroke_seg
 channels:
   - pytorch
   - nvidia
 dependencies:
   - python >= 3.8
-  - pytorch >= 1.13
+  - pytorch >= 2.0
   - torchvision
-  - pytorch-cuda=11.7
+  - pytorch-cuda=12.1
   - pip
   - pip:
     - timm
@@ -14,3 +14,4 @@ dependencies:
     - accelerate
   - scipy
   - matplotlib
+  - pandas 

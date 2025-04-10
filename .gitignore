@@ -3,7 +3,7 @@
 *.png
 
 sample-stroke-seg-results/
-sample-inpaint-results/
+stroke-seg-train-results/
 
 
 *.txt
