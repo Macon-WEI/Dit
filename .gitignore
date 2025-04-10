@@ -2,9 +2,9 @@
 *.tar.gz
 *.png
 
-inpaint-train-results/
+sample-stroke-seg-results/
+sample-inpaint-results/
 
-train-results/
 
 *.txt
 
