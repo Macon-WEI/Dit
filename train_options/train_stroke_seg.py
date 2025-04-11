@@ -457,6 +457,7 @@ def main(args):
             
             sample_idx=[19971,19972,19975,19976,19978]
             stroke_sample_idx=[2,1,3,3,2]
+            stroke_sample_idx_emb=[x-1 for x in stroke_sample_idx]
             # gt_sample_idx=[19971_2,19972_1,19975_3,19976_3,19978_2]
             gt_sample_idx=[]
 
@@ -479,7 +480,7 @@ def main(args):
 
             cond=torch.cat(tuple(img_list),0).to(device)
 
-            stroke_sample_tensor=torch.tensor(stroke_sample_idx)
+            stroke_sample_tensor=torch.tensor(stroke_sample_idx_emb)
 
             unicode_sample_tensor=torch.tensor(sample_idx)
 
